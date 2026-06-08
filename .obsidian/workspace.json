@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "AWS CloudOps/AWS Academy/Module 1/Resumen.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Resumen"
             }
           }
         ]
@@ -226,12 +226,18 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "ca723e5187390947",
+  "active": "6162e0830618066a",
   "lastOpenFiles": [
+    "AWS CloudOps/AWS Academy/Introducción.md",
+    "AWS CloudOps/AWS Academy/Module 1/Resumen.md",
     "AWS CloudOps/Contexto.md",
+    "AWS CloudOps/AWS Academy/Module 1",
+    "AWS CloudOps/AWS Academy/Module 1.md",
+    "README.md",
     "Media/Pasted image 20260608130429.png",
     "Media",
     "AWS CloudOps/AWS Academy",

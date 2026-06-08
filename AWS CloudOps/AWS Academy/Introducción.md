@@ -9,3 +9,8 @@ AWS CloudOps es el conjunto de prácticas y herramientas que permiten **operar, 
 
 Aprender CloudOps implica adquirir competencias en **seguridad**, **automatización**, **redes en la nube** y **optimización de costos**, además de desarrollar la capacidad de diseñar arquitecturas resilientes y escalables. Es útil porque permite a las empresas aprovechar la nube de forma estratégica, reduciendo riesgos y gastos mientras se mejora la disponibilidad y el rendimiento de sus aplicaciones. Por eso, dominar CloudOps abre puertas a roles como ingeniero de operaciones en la nube, administrador de sistemas en AWS o especialista en migración de infraestructura.
 
+---
+
+
+
+
