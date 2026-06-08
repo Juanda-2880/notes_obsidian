@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS CloudOps/AWS Academy/Module 1/Resumen.md",
+                "file": "AWS CloudOps/AWS Academy/Module 1/Limites de AWS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Resumen"
+              "title": "Limites de AWS"
             }
           }
         ]
@@ -232,12 +232,22 @@
   },
   "active": "6162e0830618066a",
   "lastOpenFiles": [
-    "AWS CloudOps/AWS Academy/Introducción.md",
+    "AWS CloudOps/AWS Academy/Module 1/Alcance de AWS.md",
+    "AWS CloudOps/AWS Academy/Module 1/Limites de AWS.md",
+    "AWS CloudOps/AWS Academy/Module 1/Servicios Clave para CloudOps.md",
+    "AWS CloudOps/AWS Academy/Module 1/Responsabilidades del CloudOps.md",
     "AWS CloudOps/AWS Academy/Module 1/Resumen.md",
+    "Media/Responsabilidades del CloudOps-1780958173719.webp",
+    "README.md",
+    "Media/Resumen-1780958124257.webp",
+    "Media/Resumen-1780958058354.webp",
+    "Media/Servicios Clave para CloudOps-1780955570900.webp",
+    "Media/Servicios Clave para CloudOps-1780954334109.webp",
+    "Media/Servicios Clave para CloudOps-1780953375924.webp",
+    "AWS CloudOps/AWS Academy/Introducción.md",
     "AWS CloudOps/Contexto.md",
     "AWS CloudOps/AWS Academy/Module 1",
     "AWS CloudOps/AWS Academy/Module 1.md",
-    "README.md",
     "Media/Pasted image 20260608130429.png",
     "Media",
     "AWS CloudOps/AWS Academy",
