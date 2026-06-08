@@ -1,0 +1,7 @@
+{
+  "cssTheme": "mono black (monochrome, charcoal)",
+  "accentColor": "#f2f2f2",
+  "enabledCssSnippets": [
+    "centrar-imagenes"
+  ]
+}
