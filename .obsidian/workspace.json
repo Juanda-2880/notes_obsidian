@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS CloudOps/AWS Academy/Module 1/Servicios Clave para CloudOps.md",
+                "file": "AWS CloudOps/AWS Academy/Module 1/Limites de AWS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Servicios Clave para CloudOps"
+              "title": "Limites de AWS"
             }
           }
         ]

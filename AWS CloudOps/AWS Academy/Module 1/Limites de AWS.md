@@ -1,51 +1,51 @@
 #AWS #Cloud #Services 
 
 ![[Limites de AWS-1780960658992.webp|444]]
-### 🚦 Límites de Servicio en AWS (Service Quotas)
+### Límites de Servicio en AWS (Service Quotas)
+#AWS #Services #Service_Quotas
+AWS establece límites predeterminados en la cantidad de recursos que puedes crear por cuenta y por región. No se trata de una restricción arbitraria, sino de un mecanismo de seguridad y estabilidad.
 
-AWS impone límites predeterminados en la cantidad de recursos que puedes crear por cada cuenta y por cada región. Esto no es para restringirte, sino como un mecanismo de seguridad y estabilidad.
+**Propósito de los límites:** Existen principalmente por dos razones. La primera es evitar cargos excesivos: si un script entra en un bucle y comienza a lanzar cientos de instancias EC2, los límites actúan como freno para que la factura no se dispare. La segunda es proteger la infraestructura: impiden que un solo cliente consuma toda la capacidad de una región, garantizando que los recursos estén disponibles para todos y evitando el problema del “vecino ruidoso”.
 
-**El Propósito (¿Por qué existen?):** Como menciona la imagen en el lado derecho, existen por dos razones vitales:
+### Límites Blandos (Soft Limits)
+#AWS #Services 
+Son límites que sí pueden modificarse. Si necesitas superarlos, debes abrir un caso con el soporte de AWS solicitando un aumento. Hoy en día, la mejor práctica es hacerlo desde la consola de **AWS Service Quotas**.
 
-1. **Limitar cargos excesivos (Protección Financiera):** Imagina que un script automatizado para inyección masiva de datos o de generación de alertas entra en un bucle infinito por error y empieza a lanzar cientos de instancias EC2. Si no hubiera límites, la factura a fin de mes sería astronómica. Los límites actúan como un freno de emergencia.
+Un ejemplo práctico: de forma predeterminada, AWS establece un límite de 1,000 ejecuciones simultáneas para funciones Lambda por región. Si tienes una red de sensores que dispara 5,000 alertas al mismo tiempo, las funciones adicionales serán bloqueadas a menos que hayas solicitado previamente un aumento. Es importante tener en cuenta que subir demasiado un límite sin optimizar la arquitectura puede provocar saturación en tus propias bases de datos o cuellos de botella en la red.
+
+### Límites Duros (Hard Limits)
+#AWS #Services 
+Son restricciones absolutas que no pueden modificarse bajo ninguna circunstancia. Están ligados a la arquitectura fundamental del servicio.
+
+Algunos ejemplos:
+
+- El número de VPCs por región es un límite blando, pero el bloque CIDR que asignas a una VPC no puede modificarse una vez creado, lo que constituye un límite duro.
     
-2. **Mantener la red sana (Protección de la Infraestructura):** Evita que un solo cliente consuma toda la capacidad de una región, garantizando que haya recursos disponibles para todos (el concepto de "Vecino Ruidoso" o _Noisy Neighbor_).
+- Un grupo de seguridad puede tener hasta 60 reglas de entrada o salida (límite blando), pero una instancia EC2 solo puede tener un máximo de 5 grupos de seguridad asociados (límite duro).
+    
+- En S3, el tamaño máximo de un objeto individual que puedes subir es de 5 terabytes, y este es un límite duro.
     
 
-### 🔼 Límites Blandos (Soft Limits)
+### Información de Valor (Tips de Examen y Buenas Prácticas)
+#AWS #Trusted_Advisor
 
-#AWS #AWS_Service_Quotas
+El servicio **AWS Trusted Advisor** es clave en este tema. Es el que te alerta de manera proactiva cuando estás alcanzando más del 80% de un límite de servicio. En los exámenes, si aparece esa pregunta, la respuesta correcta suele ser Trusted Advisor.
 
-Son límites predeterminados que **sí se pueden cambiar**. Si necesitas superarlos, debes abrir un caso con el _Soporte de AWS_ solicitando un aumento (Limit Increase).
+En cuanto a planificación, los aumentos de límites blandos no son automáticos. A veces requieren aprobación manual y pueden tardar días, por lo que conviene anticiparse y solicitarlos con semanas de anticipación antes de poner un proyecto en producción.
 
-- **Tip de Examen:** Hoy en día, la mejor práctica para solicitar este aumento es usar la consola de **AWS Service Quotas**.
-    
-- **Caso de uso práctico:** De forma predeterminada, AWS tiene un límite blando de 1,000 ejecuciones simultáneas para funciones Lambda por región. Si tienes una red de sensores agroclimáticos (temperatura, humedad, precipitación) en campos de cultivo y ocurre un evento repentino que dispara 5,000 alertas al mismo tiempo, las funciones extra serán bloqueadas (Throttling) a menos que hayas pedido a AWS que te suba ese límite blando con anticipación.
-    
-- **Nota de la imagen:** _Exceder algunos límites blandos puede degradar el rendimiento._ Si subes demasiado un límite sin optimizar tu arquitectura, podrías saturar tus propias bases de datos o cuellos de botella de red.
-    
+También es importante recordar que muchos límites se aplican por región. Si solicitas un aumento en `us-east-1`, no se replicará automáticamente en `us-west-2`; tendrás que hacer otra solicitud. Y aunque pedir un aumento no tiene costo, el uso de los recursos adicionales sí generará cargos en tu factura.
 
-### 🔽 Límites Duros (Hard Limits)
+### ¿Trusted Advisor?
+#AWS #Trusted_Advisor 
 
-Son restricciones absolutas que **no pueden ser modificadas** bajo ninguna circunstancia, ni siquiera pagando por soporte premium. Suelen estar ligados a la arquitectura fundamental del servicio.
+AWS Trusted Advisor es un servicio que analiza tu entorno en la nube y te ofrece recomendaciones basadas en buenas prácticas. Su objetivo es ayudarte a mantener tu infraestructura segura, eficiente y preparada para crecer. Funciona como una especie de “consultor automático” que revisa tu cuenta y te señala posibles problemas antes de que se conviertan en incidentes.
 
-- **Ejemplos de Límites Duros (¡Preguntas de examen!):**
-    
-    - No puedes tener más de **5 VPCs** por región (Soft Limit) peroooo, el bloque CIDR (rango de IPs) que le asignas a una VPC no puede ser modificado una vez creado (Hard Limit).
-        
-    - Un grupo de seguridad (Security Group) no puede tener más de **60 reglas** de entrada o salida (Soft Limit), pero una instancia EC2 solo puede tener asignados un máximo de **5 grupos de seguridad** (Hard Limit).
-        
-    - El tamaño máximo de un objeto (archivo) individual que puedes subir a un bucket de S3 es de **5 Terabytes** (Hard Limit).
-        
+En relación con los límites de servicio, Trusted Advisor cumple un papel fundamental. Uno de sus chequeos más importantes es el de **Service Limits**, que te muestra cuánto estás usando de cada recurso frente al máximo permitido. Si detecta que estás cerca del 80% de un límite, te alerta para que tomes acción preventiva. Esto es especialmente útil con los **soft limits**, ya que te da tiempo de solicitar un aumento antes de que tus aplicaciones sufran bloqueos o throttling. De esta manera, evita que un pico de tráfico inesperado afecte la disponibilidad de tus sistemas.
 
-### 💡 Información de Valor (Tips de Examen y Buenas Prácticas)
+Además de los límites, Trusted Advisor también revisa otras áreas clave como **optimización de costos**, **rendimiento**, **seguridad**, **tolerancia a fallos** y **excelencia operativa**. Por ejemplo, puede recomendarte eliminar recursos que no usas, ajustar configuraciones de seguridad o mejorar la resiliencia de tus aplicaciones. Todo esto se traduce en un entorno más estable y menos propenso a problemas financieros o técnicos.
 
-#AWS #aws_Trusted_Advisor
+El nivel de acceso a Trusted Advisor depende del plan de soporte que tengas en AWS. Con los planes básicos solo puedes ver algunos chequeos, principalmente los de límites y seguridad. En cambio, con los planes Business o Enterprise tienes acceso completo a todos los análisis y la posibilidad de integrarlo con **CloudWatch**, lo que permite recibir alertas automáticas cuando un límite está cerca de alcanzarse.
 
-- **AWS Trusted Advisor:** Es el servicio que **debes** asociar con los límites. En el examen, si te preguntan: _"¿Qué servicio te alerta de manera proactiva cuando estás alcanzando más del 80% de tu límite de servicio?"_, la respuesta correcta casi siempre es **AWS Trusted Advisor**.
-    
-- **Planificación (Best Practice):** Los aumentos de límites blandos no son automáticos. A veces un humano en AWS debe aprobarlos, lo que toma días. La buena práctica dicta que debes prever tus picos de tráfico y solicitar los aumentos con semanas de anticipación antes de lanzar un proyecto a producción.
-    
-- **Nivel de la Cuenta vs Nivel Regional:** Recuerda que muchos de estos límites se aplican **por región**. Si pides que te aumenten el límite de instancias EC2 en `us-east-1` (Norte de Virginia), ese límite no se aumentará mágicamente en `us-west-2` (Oregon); tendrás que hacer otra solicitud.
-    
-- **Costos:** Solicitar un aumento de límite **no cuesta dinero**. Sin embargo, aprovisionar y encender esos recursos adicionales una vez que te los autorizan, sí generará cargos en tu factura.
+En la práctica, la mejor forma de aprovechar Trusted Advisor es usarlo de manera regular, refrescar sus chequeos y combinarlo con **AWS Service Quotas**. Mientras Service Quotas te permite solicitar aumentos de límites, Trusted Advisor te da visibilidad sobre el consumo actual y te avisa cuándo es momento de actuar. Así, ambos servicios trabajan juntos para que los límites de AWS no sean un obstáculo, sino un mecanismo de control que puedes gestionar de forma proactiva.
+
+¿Quieres que te muestre cómo se complementan **Service Quotas** y **Trusted Advisor** en un flujo de trabajo típico de planificación de capacidad?
