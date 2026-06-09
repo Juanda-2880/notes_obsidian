@@ -21,7 +21,7 @@
       "wrap": false
     },
     "8bc5630a545cc1a9396406c014127a2e": {
-      "position": "center",
+      "position": "none",
       "width": "",
       "height": "",
       "wrap": false
@@ -37,6 +37,14 @@
   },
   "AWS CloudOps/AWS Academy/Module 1/Responsabilidades del CloudOps.md": {
     "c1ddead143c6952648d9cf85eb6bed5e": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    }
+  },
+  "AWS CloudOps/AWS Academy/Module 1/Limites de AWS.md": {
+    "09843595f65b68e364e476d9fa5a7429": {
       "position": "center",
       "width": "",
       "height": "",

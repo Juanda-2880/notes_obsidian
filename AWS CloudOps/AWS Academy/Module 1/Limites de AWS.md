@@ -1,3 +1,6 @@
+#AWS #Cloud #Services 
+
+![[Limites de AWS-1780960658992.webp|444]]
 ### 🚦 Límites de Servicio en AWS (Service Quotas)
 
 AWS impone límites predeterminados en la cantidad de recursos que puedes crear por cada cuenta y por cada región. Esto no es para restringirte, sino como un mecanismo de seguridad y estabilidad.
@@ -10,6 +13,8 @@ AWS impone límites predeterminados en la cantidad de recursos que puedes crear 
     
 
 ### 🔼 Límites Blandos (Soft Limits)
+
+#AWS #AWS_Service_Quotas
 
 Son límites predeterminados que **sí se pueden cambiar**. Si necesitas superarlos, debes abrir un caso con el _Soporte de AWS_ solicitando un aumento (Limit Increase).
 
@@ -34,6 +39,8 @@ Son restricciones absolutas que **no pueden ser modificadas** bajo ninguna circu
         
 
 ### 💡 Información de Valor (Tips de Examen y Buenas Prácticas)
+
+#AWS #aws_Trusted_Advisor
 
 - **AWS Trusted Advisor:** Es el servicio que **debes** asociar con los límites. En el examen, si te preguntan: _"¿Qué servicio te alerta de manera proactiva cuando estás alcanzando más del 80% de tu límite de servicio?"_, la respuesta correcta casi siempre es **AWS Trusted Advisor**.
     
