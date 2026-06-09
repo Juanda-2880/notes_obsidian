@@ -18,7 +18,7 @@ Cada VPC está definida y restringida a una **Región** específica (no puede ab
 - **Características Configurables:** Rangos de IP (CIDR blocks), tablas de enrutamiento (routing tables), puertas de enlace (gateways) y configuraciones de seguridad.
     
 
-> ** Información de Valor (Tip de Examen):** > * **Subredes:** A diferencia de la VPC, una subred está restringida a una sola **Zona de Disponibilidad (AZ)**.
+> **💡 Información de Valor (Tip de Examen):** > * **Subredes:** A diferencia de la VPC, una subred está restringida a una sola **Zona de Disponibilidad (AZ)**.
 > 
 > - **Seguridad:** Las VPCs usan dos capas de seguridad: **Security Groups** (a nivel de instancia, son _stateful_ o con estado) y **Network ACLs** (a nivel de subred, son _stateless_ o sin estado).
 >     
