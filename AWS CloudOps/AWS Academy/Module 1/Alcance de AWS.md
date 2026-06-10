@@ -1,6 +1,6 @@
 #AWS #Cloud #Services 
 
-### 🌐 1. Alcance Global (Global Scope)
+### 1. Alcance Global (Global Scope)
 
 Estos servicios no están atados a una ubicación geográfica específica. Operan a nivel mundial para toda tu cuenta de AWS.
 
@@ -22,7 +22,7 @@ Estos servicios no están atados a una ubicación geográfica específica. Opera
 > - **Route 53:** Es el servicio de DNS de AWS y tiene políticas de enrutamiento que pueden dirigir el tráfico a diferentes regiones del mundo según la salud del servidor o la ubicación del usuario.
 >     
 
-### 🗺️ 2. Alcance Regional (Region Scope)
+###  2. Alcance Regional (Region Scope)
 
 Una Región es un área geográfica física en el mundo (ej. `us-east-1` en N. Virginia) que contiene múltiples Zonas de Disponibilidad.
 
@@ -54,7 +54,7 @@ Una Región es un área geográfica física en el mundo (ej. `us-east-1` en N. V
 > - **AMIs y Snapshots:** Si creas una imagen (AMI) de un servidor o un Snapshot de un disco, ese respaldo se guarda en la región. Si quieres levantar ese mismo servidor en otra región, primero tienes que _copiar_ la AMI a la nueva región.
 >     
 
-### 🏢 3. Alcance de Zona de Disponibilidad (Availability Zone - AZ)
+### 3. Alcance de Zona de Disponibilidad (Availability Zone - AZ)
 
 Una AZ está conformada por uno o más centros de datos físicos distintos dentro de una Región. Tienen energía, red y conectividad redundantes y separadas de otras AZs.
 

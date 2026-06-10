@@ -21,7 +21,7 @@
       "wrap": false
     },
     "8bc5630a545cc1a9396406c014127a2e": {
-      "position": "center",
+      "position": "none",
       "width": "",
       "height": "",
       "wrap": false
@@ -45,6 +45,14 @@
   },
   "AWS CloudOps/AWS Academy/Module 1/Limites de AWS.md": {
     "09843595f65b68e364e476d9fa5a7429": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    }
+  },
+  "AWS CloudOps/AWS Academy/Module 1/IAM.md": {
+    "000e2a649b71631134f3d1ec7c68b59a": {
       "position": "center",
       "width": "",
       "height": "",
