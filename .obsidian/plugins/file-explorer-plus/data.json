@@ -38,6 +38,13 @@
         "type": "FILES",
         "pattern": "AWS CloudOps/AWS Academy/Module 1/Resumen.md",
         "patternType": "STRICT"
+      },
+      {
+        "name": "",
+        "active": true,
+        "type": "FILES",
+        "pattern": "AWS CloudOps/AWS Academy/Module 2/Resumen.md",
+        "patternType": "STRICT"
       }
     ],
     "frontMatter": [
