@@ -38,6 +38,8 @@ También es importante recordar que muchos límites se aplican por región. Si s
 ### ¿Trusted Advisor?
 #AWS #Trusted_Advisor 
 
+![[Limites de AWS-1783705773376.webp]]
+
 AWS Trusted Advisor es un servicio que analiza tu entorno en la nube y te ofrece recomendaciones basadas en buenas prácticas. Su objetivo es ayudarte a mantener tu infraestructura segura, eficiente y preparada para crecer. Funciona como una especie de “consultor automático” que revisa tu cuenta y te señala posibles problemas antes de que se conviertan en incidentes.
 
 En relación con los límites de servicio, Trusted Advisor cumple un papel fundamental. Uno de sus chequeos más importantes es el de **Service Limits**, que te muestra cuánto estás usando de cada recurso frente al máximo permitido. Si detecta que estás cerca del 80% de un límite, te alerta para que tomes acción preventiva. Esto es especialmente útil con los **soft limits**, ya que te da tiempo de solicitar un aumento antes de que tus aplicaciones sufran bloqueos o throttling. De esta manera, evita que un pico de tráfico inesperado afecte la disponibilidad de tus sistemas.
