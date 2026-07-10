@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS CloudOps/AWS Academy/Module 2/Systems Manager.md",
+                "file": "AWS CloudOps/AWS Academy/Module 1/Limites de AWS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Systems Manager"
+              "title": "Limites de AWS"
             }
           }
         ]
@@ -132,12 +132,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AWS CloudOps/AWS Academy/Module 2/Systems Manager.md",
+                "file": "AWS CloudOps/AWS Academy/Module 1/Limites de AWS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Systems Manager"
+              "title": "Outgoing links from Limites de AWS"
             }
           },
           {
@@ -231,18 +231,18 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "6162e0830618066a",
+  "active": "ca723e5187390947",
   "lastOpenFiles": [
+    "AWS CloudOps/AWS Academy/Module 1/Responsabilidades del CloudOps.md",
+    "AWS CloudOps/AWS Academy/Module 1/Servicios Clave para CloudOps.md",
+    "AWS CloudOps/AWS Academy/Module 1/Limites de AWS.md",
     "AWS CloudOps/AWS Academy/Module 1/IAM.md",
+    "AWS CloudOps/AWS Academy/Module 1/Alcance de AWS.md",
+    "AWS CloudOps/AWS Academy/Module 1/Resumen.md",
     "AWS CloudOps/AWS Academy/Module 2/Systems Manager.md",
     "Media/Systems Manager-1782249019727.webp",
     "AWS CloudOps/AWS Academy/Module 2/Resumen.md",
-    "AWS CloudOps/AWS Academy/Module 1/Resumen.md",
-    "AWS CloudOps/AWS Academy/Module 1/Alcance de AWS.md",
     "Media/Resumen-1782248507275.webp",
-    "AWS CloudOps/AWS Academy/Module 1/Servicios Clave para CloudOps.md",
-    "AWS CloudOps/AWS Academy/Module 1/Responsabilidades del CloudOps.md",
-    "AWS CloudOps/AWS Academy/Module 1/Limites de AWS.md",
     "AWS CloudOps/AWS Academy/Introducción.md",
     "AWS CloudOps/AWS Academy/Module 2",
     "AWS CloudOps/AWS Academy/Untitled.md",
