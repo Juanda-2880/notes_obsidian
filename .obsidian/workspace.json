@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS CloudOps/AWS Academy/Module 1/Limites de AWS.md",
+                "file": "AWS CloudOps/AWS Academy/Module 1/IAM.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Limites de AWS"
+              "title": "IAM"
             }
           }
         ]
@@ -132,12 +132,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AWS CloudOps/AWS Academy/Module 1/Limites de AWS.md",
+                "file": "AWS CloudOps/AWS Academy/Module 1/IAM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Limites de AWS"
+              "title": "Outgoing links from IAM"
             }
           },
           {
@@ -233,12 +233,12 @@
   },
   "active": "ca723e5187390947",
   "lastOpenFiles": [
+    "AWS CloudOps/AWS Academy/Module 1/Alcance de AWS.md",
+    "AWS CloudOps/AWS Academy/Module 1/Limites de AWS.md",
     "Media/Limites de AWS-1783705773376.webp",
     "AWS CloudOps/AWS Academy/Module 1/Responsabilidades del CloudOps.md",
     "AWS CloudOps/AWS Academy/Module 1/Servicios Clave para CloudOps.md",
-    "AWS CloudOps/AWS Academy/Module 1/Limites de AWS.md",
     "AWS CloudOps/AWS Academy/Module 1/IAM.md",
-    "AWS CloudOps/AWS Academy/Module 1/Alcance de AWS.md",
     "AWS CloudOps/AWS Academy/Module 1/Resumen.md",
     "AWS CloudOps/AWS Academy/Module 2/Systems Manager.md",
     "Media/Systems Manager-1782249019727.webp",
@@ -258,7 +258,6 @@
     "AWS CloudOps/Contexto.md",
     "AWS CloudOps/AWS Academy/Module 1",
     "AWS CloudOps/AWS Academy/Module 1.md",
-    "Media/Pasted image 20260608130429.png",
     "Media",
     "AWS CloudOps/AWS Academy",
     "AWS CloudOps",

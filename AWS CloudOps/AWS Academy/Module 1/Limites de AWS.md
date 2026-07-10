@@ -38,7 +38,7 @@ También es importante recordar que muchos límites se aplican por región. Si s
 ### ¿Trusted Advisor?
 #AWS #Trusted_Advisor 
 
-![[Limites de AWS-1783705773376.webp]]
+![[Limites de AWS-1783705773376.webp|182]]
 
 AWS Trusted Advisor es un servicio que analiza tu entorno en la nube y te ofrece recomendaciones basadas en buenas prácticas. Su objetivo es ayudarte a mantener tu infraestructura segura, eficiente y preparada para crecer. Funciona como una especie de “consultor automático” que revisa tu cuenta y te señala posibles problemas antes de que se conviertan en incidentes.
 
