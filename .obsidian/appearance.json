@@ -3,5 +3,6 @@
   "accentColor": "#f2f2f2",
   "enabledCssSnippets": [
     "centrar-imagenes"
-  ]
+  ],
+  "theme": "obsidian"
 }

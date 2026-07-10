@@ -132,11 +132,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "AWS CloudOps/AWS Academy/Module 2/Systems Manager.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Systems Manager"
             }
           },
           {
@@ -194,7 +195,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       },
       {
         "id": "227a7ef3646c9c62",
@@ -230,7 +231,7 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "ca723e5187390947",
+  "active": "6162e0830618066a",
   "lastOpenFiles": [
     "AWS CloudOps/AWS Academy/Module 1/IAM.md",
     "AWS CloudOps/AWS Academy/Module 2/Systems Manager.md",
