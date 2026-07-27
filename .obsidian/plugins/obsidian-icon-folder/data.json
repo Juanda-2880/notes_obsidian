@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "📪",
       "📑",
       "🎱",
       "LiSchool",
-      "☁",
-      "LiCamera"
+      "☁"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -39,5 +39,6 @@
   "AWS CloudOps/AWS Academy": "LiSchool",
   "Universidad": "LiSchool",
   "Universidad/Octavo Semestre": "🎱",
-  "Universidad/Octavo Semestre/PDG I": "📑"
+  "Universidad/Octavo Semestre/PDG I": "📑",
+  "Universidad/Octavo Semestre/Ciber": "📪"
 }
