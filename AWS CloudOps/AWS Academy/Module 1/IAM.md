@@ -5,7 +5,7 @@
 ---
 
 ### Amazon Identity and Access Management
-#AWS #IAM 
+#AWS #IAM #Cloud 
 
 IAM es el servicio que permite el control de acceso seguro a los recursos de AWS. Se encarga tanto de la **autenticación** (verificar quién es el usuario o sistema) como de la **autorización** (determinar a qué recursos tienen acceso y qué acciones específicas pueden realizar). IAM no se limita únicamente a usuarios humanos; también gestiona el acceso para aplicaciones y otros servicios de AWS.
 
