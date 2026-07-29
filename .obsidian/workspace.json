@@ -35,8 +35,7 @@
               "title": "Introducción a la Ciberseguridad"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -244,10 +243,11 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "bb7d47f73ef24a62",
+  "active": "2146ecae1b403caa",
   "lastOpenFiles": [
-    "Universidad/Octavo Semestre/Ciber/Semana 1/Introducción al Curso.md",
+    "Media/Introducción al Curso-1785354833847.webp",
     "Universidad/Octavo Semestre/Ciber/Semana 1/Introducción a la Ciberseguridad.md",
+    "Universidad/Octavo Semestre/Ciber/Semana 1/Introducción al Curso.md",
     "Universidad/Octavo Semestre/PDG I/Clases/Introduccion al Curso.md",
     "Universidad/Octavo Semestre/Integrador II",
     "Media/1. Introduction to cybersecurity 1.pdf",
