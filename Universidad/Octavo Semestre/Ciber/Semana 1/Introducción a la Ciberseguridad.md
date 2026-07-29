@@ -155,6 +155,7 @@ En el núcleo del marco de ciberseguridad del Instituto Nacional de Estándares 
 | **Recuperar (Recover)**    | Planificar la resiliencia y la reparación oportuna de los servicios y capacidades que hayan sido comprometidos.                        |
 
 ### Objetivos de la Ciberseguridad
+#Triada #Ciberseguridad 
 
 Mantener el ciberespacio útil y confiable requiere que todas las partes interesadas asuman un rol activo en la seguridad, yendo más allá de la simple protección de sus propios activos. Deben estar preparados para identificar y gestionar riesgos emergentes de forma proactiva. La ciberseguridad trabaja de la mano con la seguridad de la información y trasciende la mera seguridad de Internet, redes o aplicaciones; requiere la orquestación de todos estos componentes.
 
