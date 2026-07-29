@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "🔐",
       "📪",
       "📑",
       "🎱",
-      "LiSchool",
-      "☁"
+      "LiSchool"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -40,5 +40,5 @@
   "Universidad": "LiSchool",
   "Universidad/Octavo Semestre": "🎱",
   "Universidad/Octavo Semestre/PDG I": "📑",
-  "Universidad/Octavo Semestre/Ciber": "📪"
+  "Universidad/Octavo Semestre/Ciber": "🔐"
 }

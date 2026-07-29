@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Universidad/Octavo Semestre/PDG I/Introduccion al Curso.md",
+                "file": "Universidad/Octavo Semestre/Ciber/Semana 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Introduccion al Curso"
+              "title": "Semana 1"
             }
           }
         ]
@@ -233,12 +233,15 @@
   },
   "active": "ca723e5187390947",
   "lastOpenFiles": [
+    "Universidad/Octavo Semestre/PDG I/Introduccion al Curso.md",
+    "Universidad/Octavo Semestre/Ciber/Semana 1.md",
     "Universidad/Octavo Semestre/Ciber",
+    "Universidad/Octavo Semestre/Untitled.md",
     "Universidad/Untitled",
+    "Universidad/Octavo Semestre/Ciber",
     "Media/Introduccion al Curso-1785164768853.webp",
     "Media/Introduccion al Curso-1785163634158.webp",
     "README.md",
-    "Universidad/Octavo Semestre/PDG I/Introduccion al Curso.md",
     "Universidad/Octavo Semestre/PDG I",
     "AWS CloudOps/AWS Academy/Module 1/IAM.md",
     "Universidad/Octavo Semestre",
@@ -266,8 +269,6 @@
     "AWS CloudOps/AWS Academy/Module 1",
     "AWS CloudOps/AWS Academy/Module 1.md",
     "Media",
-    "AWS CloudOps/AWS Academy",
-    "AWS CloudOps",
     "Welcome.md"
   ]
 }
