@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "ad1cc811406cf02a",
+        "id": "dc7caed2d8da255e",
         "type": "tabs",
         "children": [
           {
-            "id": "ca723e5187390947",
+            "id": "8d142cc468347ecb",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Universidad/Octavo Semestre/Ciber/Semana 1.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Semana 1"
+              "title": "New tab"
             }
           }
         ]
@@ -96,7 +92,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "249bd766e6e48f4e",
@@ -132,12 +129,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AWS CloudOps/AWS Academy/Module 1/IAM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from IAM"
+              "title": "Outgoing links"
             }
           },
           {
@@ -175,13 +171,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AWS CloudOps/Contexto.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Contexto"
+              "title": "Outline"
             }
           },
           {
@@ -216,7 +211,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 324.5
+    "width": 324.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -231,10 +227,19 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "ca723e5187390947",
+  "active": "8d142cc468347ecb",
   "lastOpenFiles": [
-    "Universidad/Octavo Semestre/PDG I/Introduccion al Curso.md",
-    "Universidad/Octavo Semestre/Ciber/Semana 1.md",
+    "Universidad/Octavo Semestre/Ciber/Semana 1/Introducción a la Ciberseguridad.md",
+    "Media/1. Introduction to cybersecurity 1.pdf",
+    "Media/Introducción a la Ciberseguridad-1785297336814.webp",
+    "Media/Introducción a la Ciberseguridad-1785296297607.webp",
+    "Media/Introducción a la Ciberseguridad-1785293768787.webp",
+    "Media/1. Introduction to cybersecurity.pdf",
+    "Media/Introducción a la Ciberseguridad-1785292134299.webp",
+    "Media/Introducción a la Ciberseguridad-1785291908236.webp",
+    "Universidad/Octavo Semestre/PDG I/Clases",
+    "Universidad/Octavo Semestre/Ciber/Semana 1",
+    "Universidad/Octavo Semestre/PDG I/Clases/Introduccion al Curso.md",
     "Universidad/Octavo Semestre/Ciber",
     "Universidad/Octavo Semestre/Untitled.md",
     "Universidad/Untitled",
@@ -246,7 +251,6 @@
     "AWS CloudOps/AWS Academy/Module 1/IAM.md",
     "Universidad/Octavo Semestre",
     "Untitled",
-    "Universidad",
     "AWS CloudOps/AWS Academy/Module 1/Alcance de AWS.md",
     "AWS CloudOps/AWS Academy/Module 1/Limites de AWS.md",
     "Media/Limites de AWS-1783705773376.webp",
@@ -258,17 +262,9 @@
     "AWS CloudOps/AWS Academy/Module 2/Resumen.md",
     "Media/Resumen-1782248507275.webp",
     "AWS CloudOps/AWS Academy/Introducción.md",
-    "AWS CloudOps/AWS Academy/Module 2",
     "AWS CloudOps/AWS Academy/Untitled.md",
-    "Media/Limites de AWS-1780960658992.webp",
-    "Media/Responsabilidades del CloudOps-1780958173719.webp",
-    "Media/Resumen-1780958124257.webp",
-    "Media/Resumen-1780958058354.webp",
-    "Media/Servicios Clave para CloudOps-1780955570900.webp",
     "AWS CloudOps/Contexto.md",
-    "AWS CloudOps/AWS Academy/Module 1",
     "AWS CloudOps/AWS Academy/Module 1.md",
-    "Media",
     "Welcome.md"
   ]
 }
