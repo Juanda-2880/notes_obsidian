@@ -92,8 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "249bd766e6e48f4e",
@@ -227,8 +226,9 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "8d142cc468347ecb",
+  "active": "59eb404e14fc65b2",
   "lastOpenFiles": [
+    "Universidad/Octavo Semestre/Integrador II",
     "Universidad/Octavo Semestre/Ciber/Semana 1/Introducción a la Ciberseguridad.md",
     "Media/1. Introduction to cybersecurity 1.pdf",
     "Media/Introducción a la Ciberseguridad-1785297336814.webp",
