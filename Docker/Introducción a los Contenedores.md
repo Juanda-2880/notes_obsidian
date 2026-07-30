@@ -8,7 +8,7 @@ En una máquina limpia, el proceso suele ser:
 * Descargar e instalar el entorno de ejecución (NodeJS).
 * Descargar el código fuente de la aplicación.
 * Instalar las dependencias específicas de la app (ej. mediante `npm install`).
-* Ejecutar la aplicación
+* Ejecutar la aplicación.
 
 Aunque simplificado, esto funciona para una app sencilla. Sin embargo, el problema, a menudo conocido como la **"matriz del infierno" (Matrix of Hell)**, surge cuando escalamos:
 
