@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiContainer",
       "🔐",
       "📪",
       "📑",
-      "🎱",
-      "LiSchool"
+      "🎱"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -41,5 +41,6 @@
   "Universidad/Octavo Semestre": "🎱",
   "Universidad/Octavo Semestre/PDG I": "📑",
   "Universidad/Octavo Semestre/Ciber": "🔐",
-  "Universidad/Octavo Semestre/Integrador II": "📪"
+  "Universidad/Octavo Semestre/Integrador II": "📪",
+  "Docker": "LiContainer"
 }

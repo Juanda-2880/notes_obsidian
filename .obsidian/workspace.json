@@ -27,15 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Universidad/Octavo Semestre/Ciber/Semana 1/Introducción a la Ciberseguridad.md",
+                "file": "Docker/Introducción a los Contenedores.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Introducción a la Ciberseguridad"
+              "title": "Introducción a los Contenedores"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -243,42 +244,43 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "2146ecae1b403caa",
+  "active": "bb7d47f73ef24a62",
   "lastOpenFiles": [
-    "Media/Introducción al Curso-1785354833847.webp",
-    "Universidad/Octavo Semestre/Ciber/Semana 1/Introducción a la Ciberseguridad.md",
+    "Media/Introducción a los Contenedores-1785385257523.webp",
+    "Media/Introducción a los Contenedores-1785385017140.webp",
+    "Media/Introducción a los Contenedores-1785384843117.webp",
+    "Media/Introducción a los Contenedores-1785384658811.webp",
+    "Media/Introducción a los Contenedores-1785384494977.webp",
+    "Media/Introducción a los Contenedores-1785383420805.webp",
+    "Media/Introducción a los Contenedores-1785383310158.webp",
+    "Media/Introducción a los Contenedores-1785382915252.webp",
     "Universidad/Octavo Semestre/Ciber/Semana 1/Introducción al Curso.md",
+    "Docker/Introducción a los Contenedores.md",
+    "Docker",
+    "Universidad/Octavo Semestre/Ciber/Semana 1/Introducción a la Ciberseguridad.md",
+    "Media/Introducción al Curso-1785354833847.webp",
     "Universidad/Octavo Semestre/PDG I/Clases/Introduccion al Curso.md",
     "Universidad/Octavo Semestre/Integrador II",
     "Media/1. Introduction to cybersecurity 1.pdf",
     "Media/Introducción a la Ciberseguridad-1785297336814.webp",
     "Media/Introducción a la Ciberseguridad-1785296297607.webp",
-    "Media/Introducción a la Ciberseguridad-1785293768787.webp",
     "Media/1. Introduction to cybersecurity.pdf",
-    "Media/Introducción a la Ciberseguridad-1785292134299.webp",
-    "Media/Introducción a la Ciberseguridad-1785291908236.webp",
     "Universidad/Octavo Semestre/PDG I/Clases",
     "Universidad/Octavo Semestre/Ciber/Semana 1",
     "Universidad/Octavo Semestre/Ciber",
     "Universidad/Octavo Semestre/Untitled.md",
     "Universidad/Untitled",
     "Universidad/Octavo Semestre/Ciber",
-    "Media/Introduccion al Curso-1785164768853.webp",
-    "Media/Introduccion al Curso-1785163634158.webp",
     "README.md",
     "Universidad/Octavo Semestre/PDG I",
     "AWS CloudOps/AWS Academy/Module 1/IAM.md",
-    "Universidad/Octavo Semestre",
     "AWS CloudOps/AWS Academy/Module 1/Alcance de AWS.md",
     "AWS CloudOps/AWS Academy/Module 1/Limites de AWS.md",
-    "Media/Limites de AWS-1783705773376.webp",
     "AWS CloudOps/AWS Academy/Module 1/Responsabilidades del CloudOps.md",
     "AWS CloudOps/AWS Academy/Module 1/Servicios Clave para CloudOps.md",
     "AWS CloudOps/AWS Academy/Module 1/Resumen.md",
     "AWS CloudOps/AWS Academy/Module 2/Systems Manager.md",
-    "Media/Systems Manager-1782249019727.webp",
     "AWS CloudOps/AWS Academy/Module 2/Resumen.md",
-    "Media/Resumen-1782248507275.webp",
     "AWS CloudOps/AWS Academy/Introducción.md",
     "AWS CloudOps/AWS Academy/Untitled.md",
     "AWS CloudOps/Contexto.md",
