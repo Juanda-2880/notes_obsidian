@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docker/Introducción a los Contenedores.md",
+                "file": "Universidad/Octavo Semestre/Ciber/Semana 2/Preguntas.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Introducción a los Contenedores"
+              "title": "Preguntas"
             }
           }
         ],
@@ -248,6 +248,11 @@
   },
   "active": "bb7d47f73ef24a62",
   "lastOpenFiles": [
+    "Media/PreguntasClase2A-26-2.pdf",
+    "Universidad/Octavo Semestre/Ciber/Semana 2/Preguntas.md",
+    "Docker/Introducción a los Contenedores.md",
+    "Universidad/Octavo Semestre/Ciber/Semana 2",
+    "Universidad/Octavo Semestre/Ciber/Untitled.md",
     "Media/Introducción a los Contenedores-1785385257523.webp",
     "Media/Introducción a los Contenedores-1785385017140.webp",
     "Media/Introducción a los Contenedores-1785384843117.webp",
@@ -257,7 +262,6 @@
     "Media/Introducción a los Contenedores-1785383310158.webp",
     "Media/Introducción a los Contenedores-1785382915252.webp",
     "Universidad/Octavo Semestre/Ciber/Semana 1/Introducción al Curso.md",
-    "Docker/Introducción a los Contenedores.md",
     "Docker",
     "Universidad/Octavo Semestre/Ciber/Semana 1/Introducción a la Ciberseguridad.md",
     "Media/Introducción al Curso-1785354833847.webp",
@@ -265,7 +269,6 @@
     "Universidad/Octavo Semestre/Integrador II",
     "Media/1. Introduction to cybersecurity 1.pdf",
     "Media/Introducción a la Ciberseguridad-1785297336814.webp",
-    "Media/Introducción a la Ciberseguridad-1785296297607.webp",
     "Media/1. Introduction to cybersecurity.pdf",
     "Universidad/Octavo Semestre/PDG I/Clases",
     "Universidad/Octavo Semestre/Ciber/Semana 1",
@@ -274,7 +277,6 @@
     "Universidad/Untitled",
     "Universidad/Octavo Semestre/Ciber",
     "README.md",
-    "Universidad/Octavo Semestre/PDG I",
     "AWS CloudOps/AWS Academy/Module 1/IAM.md",
     "AWS CloudOps/AWS Academy/Module 1/Alcance de AWS.md",
     "AWS CloudOps/AWS Academy/Module 1/Limites de AWS.md",
