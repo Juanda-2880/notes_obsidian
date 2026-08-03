@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "a843cc952e3e77cd",
+        "id": "36b6df6c0e3d2f90",
         "type": "tabs",
         "children": [
           {
-            "id": "032ef5db955dd9d8",
+            "id": "27bc4c1a2bc51d07",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -228,7 +228,7 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "032ef5db955dd9d8",
+  "active": "27bc4c1a2bc51d07",
   "lastOpenFiles": [
     "Universidad/Octavo Semestre/Ciber/Semana 2/Preguntas.md",
     "Universidad/Octavo Semestre/Ciber/Semana 1/Introducción al Curso.md",
