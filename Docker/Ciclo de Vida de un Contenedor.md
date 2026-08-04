@@ -1,6 +1,5 @@
 #Docker #Containers 
 
-### Ciclo de Vida de un Contenedor
 
 ![[Corriendo Contenedores con Docker-1785816618854.webp]]
 

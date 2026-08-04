@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docker/Comandos.md",
+                "file": "Docker/Docker Images.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Comandos"
+              "title": "Docker Images"
             }
           }
         ]
@@ -234,7 +234,10 @@
   },
   "active": "460160f088a9ebfc",
   "lastOpenFiles": [
-    "Docker/Corriendo Contenedores con Docker.md",
+    "Media/Docker Images-1785879032088.webp",
+    "Media/Docker Images-1785878051823.webp",
+    "Docker/Ciclo de Vida de un Contenedor.md",
+    "Docker/Docker Images.md",
     "Docker/Comandos.md",
     "Universidad/Octavo Semestre/Ciber/Semana 2/Preguntas.md",
     "Universidad/Octavo Semestre/Ciber/Semana 2/Preparación Clase.md",
@@ -254,7 +257,6 @@
     "Media/Introducción a los Contenedores-1785384658811.webp",
     "Media/Introducción a los Contenedores-1785384494977.webp",
     "Media/Introducción a los Contenedores-1785383420805.webp",
-    "Media/Introducción a los Contenedores-1785383310158.webp",
     "Docker",
     "Universidad/Octavo Semestre/Ciber/Semana 1/Introducción a la Ciberseguridad.md",
     "Universidad/Octavo Semestre/PDG I/Clases/Introduccion al Curso.md",
@@ -277,7 +279,6 @@
     "AWS CloudOps/AWS Academy/Introducción.md",
     "AWS CloudOps/AWS Academy/Untitled.md",
     "AWS CloudOps/Contexto.md",
-    "AWS CloudOps/AWS Academy/Module 1.md",
-    "Welcome.md"
+    "AWS CloudOps/AWS Academy/Module 1.md"
   ]
 }
