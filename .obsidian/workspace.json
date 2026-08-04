@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Universidad/Octavo Semestre/Ciber/Semana 2/Preguntas.md",
+                "file": "Docker/Comandos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Preguntas"
+              "title": "Comandos"
             }
           }
         ]
@@ -216,8 +216,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 324.5,
-    "collapsed": true
+    "width": 324.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -232,15 +231,18 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "27bc4c1a2bc51d07",
+  "active": "ca7216684bf528bd",
   "lastOpenFiles": [
+    "Docker/Comandos.md",
+    "Docker/Corriendo Contenedores con Docker.md",
+    "Media/Corriendo Contenedores con Docker-1785816618854.webp",
+    "Docker/Introducción a los Contenedores.md",
     "Universidad/Octavo Semestre/Ciber/Semana 2/Preguntas.md",
     "Universidad/Octavo Semestre/PDG I/Clases/Arból de Probamas con IASLAB.md",
     "README.md",
     "Universidad/Octavo Semestre/Ciber/Semana 1/Introducción al Curso.md",
     "Media/Preguntas-1785715012319.webp",
     "Media/PreguntasClase2A-26-2.pdf",
-    "Docker/Introducción a los Contenedores.md",
     "Universidad/Octavo Semestre/Ciber/Semana 2",
     "Universidad/Octavo Semestre/Ciber/Untitled.md",
     "Media/Introducción a los Contenedores-1785385257523.webp",
@@ -253,7 +255,6 @@
     "Media/Introducción a los Contenedores-1785382915252.webp",
     "Docker",
     "Universidad/Octavo Semestre/Ciber/Semana 1/Introducción a la Ciberseguridad.md",
-    "Media/Introducción al Curso-1785354833847.webp",
     "Universidad/Octavo Semestre/PDG I/Clases/Introduccion al Curso.md",
     "Universidad/Octavo Semestre/Integrador II",
     "Media/1. Introduction to cybersecurity 1.pdf",
