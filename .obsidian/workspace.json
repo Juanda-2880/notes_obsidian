@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Universidad/Octavo Semestre/Ciber/Semana 2/Preguntas.md",
+                "file": "Docker/Comandos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Preguntas"
+              "title": "Comandos"
             }
           }
         ]
@@ -234,14 +234,14 @@
   },
   "active": "460160f088a9ebfc",
   "lastOpenFiles": [
+    "Docker/Corriendo Contenedores con Docker.md",
+    "Docker/Comandos.md",
+    "Universidad/Octavo Semestre/Ciber/Semana 2/Preguntas.md",
     "Universidad/Octavo Semestre/Ciber/Semana 2/Preparación Clase.md",
     "Universidad/Octavo Semestre/PDG I/Clases/Arból de Probamas con IASLAB.md",
     "Media/Preparación Clase-1785861190793.webp",
-    "Docker/Comandos.md",
-    "Docker/Corriendo Contenedores con Docker.md",
     "Media/Corriendo Contenedores con Docker-1785816618854.webp",
     "Docker/Introducción a los Contenedores.md",
-    "Universidad/Octavo Semestre/Ciber/Semana 2/Preguntas.md",
     "README.md",
     "Universidad/Octavo Semestre/Ciber/Semana 1/Introducción al Curso.md",
     "Media/Preguntas-1785715012319.webp",
