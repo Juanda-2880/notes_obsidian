@@ -195,7 +195,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 2
       },
       {
         "id": "227a7ef3646c9c62",
@@ -231,10 +231,10 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "ca7216684bf528bd",
+  "active": "27bc4c1a2bc51d07",
   "lastOpenFiles": [
-    "Docker/Comandos.md",
     "Docker/Corriendo Contenedores con Docker.md",
+    "Docker/Comandos.md",
     "Media/Corriendo Contenedores con Docker-1785816618854.webp",
     "Docker/Introducción a los Contenedores.md",
     "Universidad/Octavo Semestre/Ciber/Semana 2/Preguntas.md",
