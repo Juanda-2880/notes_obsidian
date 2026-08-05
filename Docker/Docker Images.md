@@ -52,22 +52,70 @@ Para llevar tus apuntes al siguiente nivel, aquí tienes algunos conceptos técn
 
 
 
-#### Container Registries
+### ¿Qué son los Container Registries?
 
-Estos registries se dan desde el momento en el que se desean almacenar y manejar las imagenes de docker en un entorno un poco mas interno o tambien publico para que otra gente las utilice y así, por lo que esta en local pero no es la mejor solucion 
+Un **Container Registry** (Registro de Contenedores) es un repositorio centralizado diseñado específicamente para almacenar, gestionar y distribuir imágenes de Docker. Aunque puedes almacenar tus imágenes localmente en tu propia máquina durante el desarrollo, esta no es una solución escalable ni práctica para entornos de producción. Los registros resuelven este problema al proporcionar una ubicación en red (interna o pública) para subir (_push_) y descargar (_pull_) las imágenes de forma eficiente.
 
-Los beneficios de Container Registries es 
-- Colaboración porque permite compartir las iamgenes con los compañeros de equipo, clientes y en si una comunidad
-- Versioning se puede hacer el track de las diferentes versiones de las imagenes facilitando el rollback o las actualizaciones este se usa con tags y difeirentes versiones
--  Seguridad, los private registries da un entorno mas seguro con images sensibles
-- Automate te image build and deployment as part of a CI CD Pipeline 
+### Beneficios de usar un Container Registry
 
-Los tipos de los contenedores registries estan los 
+- **Colaboración:** Permite compartir imágenes fácilmente con compañeros de equipo, clientes o la comunidad global de desarrolladores.
+    
+- **Control de Versiones (Versioning):** Facilita el seguimiento de las diferentes iteraciones de una imagen mediante el uso de etiquetas (_tags_), como `v1.0.3` o `latest`. Esto es vital para realizar actualizaciones ordenadas o revertir cambios (_rollback_) si ocurre un fallo.
+    
+- **Seguridad:** Los registros privados ofrecen un entorno protegido con controles de acceso estrictos, ideal para almacenar imágenes que contienen código propietario o información sensible.
+    
+- **Automatización (CI/CD):** Son una pieza fundamental en las canalizaciones de Integración y Despliegue Continuo (CI/CD), permitiendo automatizar la construcción de la imagen y su posterior despliegue a los servidores.
+    
 
-- 
-Public Registries son los que estan abiertos a todo el mundo como podria ser Docker Hub
+### Tipos de Registros y Modelos de Alojamiento
 
-Private Registries, es usasdo para una propiedad fuerte o images sensibles y ofrecen accesso de control granular ya sea el de AWS, GCP, Azure, Quay, Harbor etc etc
+Basándonos en la tabla del archivo "Screenshot_20260804_163021.png", a la hora de elegir un Container Registry se deben evaluar varias dimensiones:
+
+**1. Hosting Type (Tipo de Alojamiento)**
+
+- **Public (Públicos):** Abiertos a todo el mundo (ej. Docker Hub). Son ideales para proyectos de código abierto, colaboración comunitaria y distribución pública de software.
+    
+- **Private (Privados):** Esenciales para proteger datos sensibles, código propietario y proyectos internos de una organización.
+    
+- **Self-Hosted (Autoalojados):** Instalados en tu propia infraestructura. Ofrecen el máximo control y flexibilidad, pero requieren que tu equipo gestione el mantenimiento de los servidores (ej. Harbor).
+    
+- **Cloud-Hosted (Alojados en la Nube):** Gestionados por un proveedor (ej. AWS ECR, GCP Artifact Registry, Azure Container Registry). Son muy convenientes, altamente escalables y se integran de forma nativa con otros servicios del mismo proveedor.
+    
+
+**2. Security Features (Características de Seguridad)**
+
+- **Básicas:** Autenticación simple, suficiente para proyectos públicos o poco sensibles.
+    
+- **Avanzadas:** Incluyen Control de Acceso Basado en Roles (RBAC), escaneo de vulnerabilidades y firma de imágenes (_Image Signing_). Son cruciales para cumplir con normativas y garantizar despliegues seguros.
+    
+
+**3. Integrations (Integraciones)**
+
+- **Limitadas:** Adecuadas para proyectos independientes o flujos de trabajo sencillos.
+    
+- **Extensivas:** Ofrecen APIs, Webhooks y soporte nativo para herramientas CI/CD, permitiendo crear flujos de trabajo complejos y totalmente automatizados.
+    
+
+**4. Cost Model (Modelo de Costos)**
+
+- **Free Tier:** Capas gratuitas con limitaciones, excelentes para experimentación.
+    
+- **Usage-Based (Basado en uso):** Pagas por lo que consumes (almacenamiento y ancho de banda). Es flexible pero puede escalar rápidamente.
+    
+- **Fixed Subscription (Suscripción fija):** Costos predecibles, aunque puede no ser rentable si el uso es bajo.
+    
+- **Open-Source (Código abierto):** El software es gratuito, pero requiere inversión en la infraestructura subyacente y mantenimiento.
+    
+
+### Información de Valor Extra (Enfoque en Cloud y Ciberseguridad)
+
+Para darle un enfoque más robusto y profesional a tus apuntes:
+
+- **Image Scanning en tiempo real:** En el ámbito de la ciberseguridad aplicada a contenedores, los registros modernos (como AWS ECR o Harbor) incluyen motores de escaneo estático. Cada vez que haces un _push_ de una imagen, el registro la escanea contra bases de datos de vulnerabilidades conocidas (CVEs). Puedes configurar políticas para que, si una imagen tiene vulnerabilidades "Críticas", el pipeline de despliegue se bloquee automáticamente.
+    
+- **Ciclo de vida y Retención (Lifecycle Policies):** En entornos Cloud, el almacenamiento cuesta dinero. Los registros permiten configurar reglas automáticas, por ejemplo: "Eliminar todas las imágenes que no tengan el tag _release_ y que tengan más de 30 días de antigüedad", optimizando así los costos de infraestructura.
+    
+- **Firma de Imágenes (Image Signing):** Herramientas como Docker Content Trust (DCT) o Sigstore permiten firmar criptográficamente las imágenes en el registro. Esto garantiza que la imagen que se despliega en producción es exactamente la misma que construyó el equipo de desarrollo, evitando ataques de manipulación en el medio (_man-in-the-middle_).
 
 
 ![[Docker Images-1785879032088.webp]]
