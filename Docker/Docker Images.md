@@ -1,4 +1,4 @@
-
+#Docker #Images 
 ### ¿Qué son las Imágenes de Docker?
 
 Las imágenes de Docker se pueden entender como el **ADN de nuestros contenedores**.
@@ -49,7 +49,6 @@ Para llevar tus apuntes al siguiente nivel, aquí tienes algunos conceptos técn
 
 
 ![[Docker Images-1785878051823.webp]]
-
 
 
 ### ¿Qué son los Container Registries?
