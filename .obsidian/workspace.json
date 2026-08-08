@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Universidad/Octavo Semestre/Innovación III/Ideas Principales de Charla Innovación III.md",
+                "file": "Universidad/Octavo Semestre/Automatización/Cosas por Investigar Bien.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ideas Principales de Charla Innovación III"
+              "title": "Cosas por Investigar Bien"
+            }
+          },
+          {
+            "id": "260e2cf57b1de974",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Universidad/Octavo Semestre/Automatización/Temas Estudiados de Clase/Manifesto Ágil.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Manifesto Ágil"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -232,10 +247,11 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "84aa18f2dd772584",
+  "active": "260e2cf57b1de974",
   "lastOpenFiles": [
-    "Universidad/Octavo Semestre/Automatización/Manifesto Agil.md",
-    "Universidad/Octavo Semestre/Automatización/Untitled.md",
+    "Universidad/Octavo Semestre/Automatización/Cosas por Investigar Bien.md",
+    "Universidad/Octavo Semestre/Automatización/Temas Estudiados de Clase/Manifesto Ágil.md",
+    "Universidad/Octavo Semestre/Automatización/Temas Estudiados de Clase",
     "Universidad/Octavo Semestre/Innovación III/Ideas Principales de Charla Innovación III.md",
     "Universidad/Octavo Semestre/Innovación III",
     "Universidad/Octavo Semestre/Automatización",
@@ -270,7 +286,6 @@
     "Media/1. Introduction to cybersecurity 1.pdf",
     "Media/1. Introduction to cybersecurity.pdf",
     "Universidad/Octavo Semestre/PDG I/Clases",
-    "Universidad/Octavo Semestre/Ciber/Semana 1",
     "Universidad/Octavo Semestre/Untitled.md",
     "AWS CloudOps/AWS Academy/Module 1/IAM.md",
     "AWS CloudOps/AWS Academy/Module 1/Alcance de AWS.md",
@@ -278,7 +293,6 @@
     "AWS CloudOps/AWS Academy/Module 1/Responsabilidades del CloudOps.md",
     "AWS CloudOps/AWS Academy/Module 1/Servicios Clave para CloudOps.md",
     "AWS CloudOps/AWS Academy/Module 1/Resumen.md",
-    "AWS CloudOps/AWS Academy/Module 2/Systems Manager.md",
-    "AWS CloudOps/AWS Academy/Module 2/Resumen.md"
+    "AWS CloudOps/AWS Academy/Module 2/Systems Manager.md"
   ]
 }
