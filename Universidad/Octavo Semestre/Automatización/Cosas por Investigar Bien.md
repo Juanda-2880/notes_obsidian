@@ -1,13 +1,8 @@
-Manifesto Ágil 
-- Los 12
+
 
 Scrum
 
 
-Kanban 
-
-MicroFrontEnd 
-Microservicios
 
 Que es DevOps, conjunto de practicas y conceptos que imponen un cambio cultural, se dejan de hacer las cosas como se estaban haciendo, Automatiza tareas, tiene pruebas de Calidad, Adecuada administracion de la Infraestructura. El de Operaciones indica que todo esta listo, y el de Desarollo solo aplica con una Image, DevOps permite la entrega Continua
 
