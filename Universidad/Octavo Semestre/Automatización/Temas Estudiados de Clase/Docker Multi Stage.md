@@ -1,3 +1,5 @@
+#Universidad #Docker #Auto #PlatsII #Contexto #Images 
+
 ### El Problema: El peso y la seguridad de las imágenes tradicionales
 
 El uso de contenedores (con herramientas como Docker) es el estándar actual para el desarrollo nativo en la nube. Teóricamente, los contenedores ofrecen portabilidad, eficiencia y un bajo consumo de recursos. Sin embargo, estos beneficios se pierden rápidamente si no construimos las imágenes correctamente.

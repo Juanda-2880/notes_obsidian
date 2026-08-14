@@ -1,10 +1,4 @@
 
-
-Scrum
-
-
-Golden Images
-
 Powershell 
 
 Bash
