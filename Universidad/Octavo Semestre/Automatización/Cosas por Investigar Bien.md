@@ -1,8 +1,4 @@
 
-Powershell 
-
-Bash
-
 Piramides de Pruebas
 
 Lighthouse Medir Performance de una aplicación
