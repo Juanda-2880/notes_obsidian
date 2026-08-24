@@ -1,9 +1,5 @@
 
-Piramides de Pruebas
 
-Lighthouse Medir Performance de una aplicación
-
-Reglas en Git según los roles
 
 Semantic Versioning
 

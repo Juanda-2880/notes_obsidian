@@ -36,9 +36,3 @@ Que es commputacion en la nube
 Magic Quadrant
 
 ----
-
-Servicios para la IA
-
-- Virtualización
--  Contenedor
-- 
