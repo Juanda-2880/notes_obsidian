@@ -1,9 +1,6 @@
 
 
 
-Semantic Versioning
-
-
 Naming Convention
 
 Fury el Agente
