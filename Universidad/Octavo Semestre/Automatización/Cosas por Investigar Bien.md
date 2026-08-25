@@ -1,18 +1,9 @@
 
 
 
-
-
-Fury el Agente
-
-
-Chaos Engine Lo de Netflix
-
-CNCF
-
 Sengdrid cosas de correos no se como se llame
 
-Twelve Factor Apps
+
 
 Modelo de Implemntacion es 
 - PLan Requerimientos
@@ -46,4 +37,15 @@ Migracion 2016 a 2019
 porque en AWS no es con NPM si no con Yum
 
 Capex y Opex
+
+-----
+
+Diagrama de Burnout
+
+QA
+
+
+Service Discovery Docker
+
+CI/CD
 
