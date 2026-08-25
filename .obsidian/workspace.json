@@ -11,14 +11,12 @@
             "id": "069b904973549d12",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Universidad/Octavo Semestre/PDG I/Investigación/KubeRay con CRDs.md",
-                "mode": "source",
-                "source": false
+                "file": "Universidad/Octavo Semestre/Automatización/Expos/Cloud Design Patterns/Guion_Presentacion_Cloud_Patterns.pdf"
               },
-              "icon": "lucide-file",
-              "title": "KubeRay con CRDs"
+              "icon": "lucide-file-text",
+              "title": "Guion_Presentacion_Cloud_Patterns"
             }
           }
         ]
@@ -98,7 +96,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "249bd766e6e48f4e",
@@ -235,8 +234,12 @@
   },
   "active": "069b904973549d12",
   "lastOpenFiles": [
-    "Universidad/Octavo Semestre/PDG I/Investigación/¿Qué es Ray?.md",
+    "Universidad/Octavo Semestre/Automatización/Expos/Cloud Design Patterns/Presentación Cloud Desing Pattern.pdf",
+    "Universidad/Octavo Semestre/Automatización/Expos/Cloud Design Patterns/Guion_Presentacion_Cloud_Patterns.pdf",
+    "Universidad/Octavo Semestre/Automatización/Expos/Branching/Guión.md",
     "Universidad/Octavo Semestre/PDG I/Investigación/KubeRay con CRDs.md",
+    "Universidad/Octavo Semestre/Automatización/Expos/Branching",
+    "Universidad/Octavo Semestre/PDG I/Investigación/¿Qué es Ray?.md",
     "Media/¿Qué es Ray_-1787674478565.webp",
     "Universidad/Octavo Semestre/PDG I/Investigación/Ray on Kubernetes.md",
     "Universidad/Octavo Semestre/Ciber/Semana 5/Preguntas 2.md",
@@ -251,8 +254,6 @@
     "Docker/Introducción a los Contenedores.md",
     "Docker/Comandos.md",
     "Universidad/Octavo Semestre/Automatización/Temas Estudiados de Clase/Reglas de Git según los Roles.md",
-    "Universidad/Octavo Semestre/Automatización/Expos/Cloud Design Patterns/Guion_Presentacion_Cloud_Patterns.pdf",
-    "Universidad/Octavo Semestre/Automatización/Expos/Cloud Design Patterns/Presentación Cloud Desing Pattern.pdf",
     "Universidad/Octavo Semestre/Automatización/Temas Estudiados de Clase/Microfrontends.md",
     "Universidad/Octavo Semestre/Automatización/Temas Estudiados de Clase/Kanban.md",
     "Universidad/Octavo Semestre/Automatización/Temas Estudiados de Clase/Manifesto Ágil.md",
@@ -264,8 +265,6 @@
     "Universidad/Octavo Semestre/Automatización/Temas Estudiados de Clase/Docker Golden Images.md",
     "Universidad/Octavo Semestre/PDG I/Clases/Taller de Escritura.md",
     "Media/Taller de Escritura-1787582117032.webp",
-    "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 1/Investigaciones de Clase.md",
-    "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 2/Investigación Antes de Clase.md",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 2",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 1",
     "Universidad/Octavo Semestre/Ciber/Semana 5",
@@ -274,7 +273,6 @@
     "Universidad/Octavo Semestre/Automatización/Expos/Cloud Design Patterns",
     "Universidad/Octavo Semestre/Automatización/Expos",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA",
-    "Universidad/Octavo Semestre/Automatización/Azure",
     "Media/Dockerfiles-1785898072202.webp",
     "Media/Docker Images-1785879032088.webp",
     "Media/Docker Images-1785878051823.webp",
