@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Universidad/Octavo Semestre/Automatización/Proyecto 1/Temas de Investigación/Diagrama de Secuencia.md",
+                "file": "Universidad/Octavo Semestre/Innovación III/Ideas Principales de Charla Innovación III.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Diagrama de Secuencia"
+              "title": "Ideas Principales de Charla Innovación III"
             }
           }
         ]
@@ -236,8 +236,9 @@
   },
   "active": "565491986c95c0d5",
   "lastOpenFiles": [
-    "Universidad/Octavo Semestre/Automatización/Expos/Cloud Design Patterns/Guion_Presentacion_Cloud_Patterns.pdf",
     "Universidad/Octavo Semestre/Automatización/Proyecto 1/Temas de Investigación/Diagrama de Secuencia.md",
+    "Universidad/Octavo Semestre/Automatización/Cosas por Investigar Bien.md",
+    "Universidad/Octavo Semestre/Automatización/Expos/Cloud Design Patterns/Guion_Presentacion_Cloud_Patterns.pdf",
     "Media/Diagrama de Secuencia-1787839847981.webp",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 2/Investigación Antes de Clase.md",
     "Universidad/Octavo Semestre/Automatización/Proyecto 1/Temas de Investigación",
@@ -253,7 +254,6 @@
     "Media/¿Qué es Ray_-1787674478565.webp",
     "Universidad/Octavo Semestre/PDG I/Investigación/Ray on Kubernetes.md",
     "Universidad/Octavo Semestre/PDG I/Investigación",
-    "Universidad/Octavo Semestre/Automatización/Cosas por Investigar Bien.md",
     "Universidad/Octavo Semestre/Automatización/Temas Estudiados de Clase/Docker Multi Stage.md",
     "Docker/Dockerfiles.md",
     "Docker/Docker Images.md",

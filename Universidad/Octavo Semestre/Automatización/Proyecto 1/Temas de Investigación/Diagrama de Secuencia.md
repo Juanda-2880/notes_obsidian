@@ -48,3 +48,8 @@ Si cambia el nombre de un rol de clasificador por un nombre de rol que existe en
 
 Contiene los elementos que componen la interacción. En el panel de Objetos , los bordes del sistema y las instancias se muestran como línea de instancia, que son líneas verticales con un recuadro que contiene el nombre del rol. Los mensaje como, por ejemplo, sucesos, operaciones y tiempo de espera se muestran generalmente como flechas horizontales y inclinadas. 
 Los mensajes aparecen en secuencia a medida que el tiempo avanza por el diagrama. La distancia vertical entre puntos en el tiempo indica sólo la secuencia en el tiempo y no cualquier escala de tiempo 
+
+----
+
+### Comparación de los modos de análisis y diseño 
+
