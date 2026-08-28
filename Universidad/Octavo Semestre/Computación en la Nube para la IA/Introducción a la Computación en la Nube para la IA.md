@@ -36,3 +36,7 @@ Que es commputacion en la nube
 Magic Quadrant
 
 ----
+
+SQL en Google 
+BigQuery
+
