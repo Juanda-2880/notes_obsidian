@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 3/Investigación Antes de Clase.md",
+                "file": "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 3/Clase.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Investigación Antes de Clase"
+              "title": "Clase"
             }
           }
         ]
@@ -235,10 +235,11 @@
   },
   "active": "c999548812184553",
   "lastOpenFiles": [
+    "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 3/Investigación Antes de Clase.md",
+    "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 3/Clase.md",
     "Media/Investigación Antes de Clase-1787942412442.webp",
     "Media/Investigación Antes de Clase-1787942075785.webp",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 2/Investigación Antes de Clase.md",
-    "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 3/Investigación Antes de Clase.md",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Introducción a la Computación en la Nube para la IA.md",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 3",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 1/Entrega.md",
@@ -279,7 +280,6 @@
     "Universidad/Octavo Semestre/Ciber/Semana 5",
     "Media/Pirámide de Pruebas-1787531376258.webp",
     "Media/Pirámide de Pruebas-1787531144778.webp",
-    "Media/Dockerfiles-1785898072202.webp",
-    "Media/Docker Images-1785879032088.webp"
+    "Media/Dockerfiles-1785898072202.webp"
   ]
 }
