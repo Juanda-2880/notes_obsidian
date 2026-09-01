@@ -49,3 +49,22 @@ Service Discovery Docker
 
 CI/CD
 
+----
+
+Las ideas principales del CI es Continuos Feedback y el Shift Left 
+
+Git Squash 
+
+
+MVN CLEAN INSTALL al final de cada Pipelines de CI
+
+Ambientes Homogenios en Terraform 
+
+Cambiar de West Europe a otra region 
+
+Revisar el HCL Vault 
+
+L7 Traffic Management 
+
+Packer con Vagrant
+
