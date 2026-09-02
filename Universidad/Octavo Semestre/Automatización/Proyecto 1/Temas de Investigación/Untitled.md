@@ -1,241 +1,115 @@
-# Gestión de cambios y trazabilidad
+# Revisión de Cloud Design Patterns - Docket Microservices
 
-**Proyecto:** SINTRATEL Docket  
-**HU:** #72 — Definir proceso de gestión de cambios y trazabilidad entre commits, HUs y despliegues
+  
 
-## Objetivo
+De acuerdo con la historia de usuario, a continuación se presenta el análisis de los patrones de diseño en la nube (Cloud Design Patterns) actualmente presentes en el proyecto, así como la propuesta para implementar un patrón de resiliencia.
 
-Definir un proceso sencillo para que cada cambio realizado en el proyecto pueda ser identificado, revisado y relacionado con una Historia de Usuario o incidencia.
+  
 
-La idea es que cualquier cambio pueda seguir este flujo:
+## 1. Patrones de Diseño Existentes (Documentación)
 
-```text
-Issue / HU
-   ↓
-Rama
-   ↓
-Commits
-   ↓
-Pull Request
-   ↓
-Checks + Revisión
-   ↓
-Merge a main
-   ↓
-Despliegue
-   ↓
-Release
-```
+  
 
----
+Se ha analizado la arquitectura de la aplicación y se han identificado los siguientes patrones en al menos 3 de los microservicios:
 
-## 1. Solicitud del cambio
+  
 
-Todo cambio debe comenzar con un **GitHub Issue**.
+### A. `todos-api` (Node.js)
 
-El Issue debe indicar:
+- **Publisher-Subscriber (Asynchronous Messaging):** Utiliza Redis para publicar eventos (mensajes) de auditoría o registro de operaciones en un canal (`log_channel`) cuando se crea o elimina un "todo".
 
-- Qué se necesita hacer.
-- Por qué se necesita.
-- Criterios de aceptación.
-- Responsable.
+- **Distributed Tracing (Trazabilidad Distribuida):** Integra `zipkin` para enviar trazas de las peticiones, permitiendo observar el flujo de las transacciones a lo largo de la aplicación.
 
-Ejemplo:
+- **Caching:** Utiliza caché en memoria (`memory-cache`) para almacenar los datos de los ToDos.
 
-```text
-Issue #72
-Definir proceso de gestión de cambios y trazabilidad.
-```
+  
 
----
+### B. `log-message-processor` (Python)
 
-## 2. Creación de la rama
+- **Event-Driven Architecture / Pub-Sub:** Actúa como suscriptor en el ecosistema, escuchando asíncronamente el canal de Redis para procesar los mensajes publicados por el `todos-api`. Esto desacopla el procesamiento de logs de la lógica de negocio principal.
 
-Para trabajar el cambio se crea una rama relacionada con el número del Issue.
+- **Distributed Tracing:** Continúa la traza (span) iniciada por otros servicios utilizando `py_zipkin`, manteniendo la correlación (`trace_id` y `span_id`) que llega a través del mensaje de Redis.
 
-Ejemplo:
+  
 
-```text
-docs/72-gestion-cambios
-```
+### C. `auth-api` (Go)
 
-No se deben hacer cambios directamente sobre `main`.
+- **Service-to-Service Communication (Synchronous):** Este microservicio se comunica sincrónicamente vía HTTP REST con el `users-api` para validar credenciales y obtener la información del usuario antes de generar el token JWT.
+
+- **Distributed Tracing:** Implementa middleware para propagar las trazas hacia Zipkin.
+
+  
+
+### D. `users-api` (Java / Spring Boot)
+
+- **Database per Service:** Mantiene su propia base de datos (H2 mediante Spring Data JPA) para gestionar los usuarios, garantizando el bajo acoplamiento de datos.
+
+  
 
 ---
 
-## 3. Commits
+  
 
-Los commits deben ser claros y, cuando sea posible, incluir el número del Issue.
+## 2. Propuesta de Patrón de Resiliencia
 
-Ejemplo:
+  
 
-```text
-docs: agregar proceso de gestión de cambios (#72)
-```
+El equipo debe elegir un punto crítico de falla. En esta arquitectura, **el punto de falla más relevante** es la comunicación síncrona entre el `auth-api` y el `users-api`.
 
-Esto permite saber rápidamente a qué Historia de Usuario pertenece un cambio.
+Si el servicio de usuarios experimenta lentitud o caídas, el servicio de autenticación sufrirá agotamiento de recursos (hilos/conexiones bloqueadas esperando respuesta), lo que tirará abajo todo el inicio de sesión del sistema.
 
----
+  
 
-## 4. Pull Request
+### Patrón Elegido: Circuit Breaker (Cortocircuito) + Timeout
 
-Cuando el cambio esté terminado se crea un **Pull Request hacia `main`**.
+**Dónde implementarlo:** En el cliente HTTP dentro del microservicio `auth-api` (Go) al realizar la llamada a `users-api`.
 
-El Pull Request debe indicar qué Issue resuelve.
+  
 
-Ejemplo:
+**Justificación:**
 
-```text
-Closes #72
-```
+- **Circuit Breaker:** Evitará que el `auth-api` siga enviando peticiones a un `users-api` que ya está caído, devolviendo un error rápido (Fail-fast) a los clientes y permitiendo que el servicio de usuarios se recupere.
 
-Antes de aprobar el PR se debe verificar:
+- **Timeout:** Evitará que las peticiones se queden colgadas indefinidamente si el `users-api` se vuelve lento (latencia alta).
 
-- Que el cambio cumple los criterios de aceptación.
-- Que los checks automáticos pasen.
-- Que otro integrante del equipo revise el cambio.
+  
 
----
+**¿Cómo se implementaría? (Diseño)**
 
-## 5. Aprobación
+1. En `auth-api` (`user.go` o `main.go`), se envolvería la llamada HTTP al `UserAPIAddress` utilizando una librería de Circuit Breaker (por ejemplo, `sony/gobreaker`).
 
-Un cambio puede pasar a `main` cuando:
+2. Se configurarían umbrales: si el 50% de las peticiones en los últimos 10 segundos fallan o exceden un Timeout (ej. 2 segundos), el circuito se "Abre" (Open).
 
-- Los checks de GitHub Actions sean exitosos.
-- Las pruebas pasen.
-- El análisis de calidad, si aplica, sea exitoso.
-- Al menos otro integrante apruebe el Pull Request.
+3. Mientras esté Abierto, el `auth-api` retornará inmediatamente un error 503 (Service Unavailable) sin intentar llamar a la red.
 
-Flujo:
+4. Tras un tiempo de enfriamiento, pasará a "Semi-Abierto" (Half-Open) para probar si el `users-api` ya se recuperó.
 
-```text
-PR
- ↓
-Checks
- ↓
-Revisión
- ↓
-Aprobación
- ↓
-Merge a main
-```
+  
 
----
+### 3. Prueba de Validación del Patrón (Estrategia)
 
-## 6. Despliegue
+  
 
-Después del merge, la pipeline de GitHub Actions se encarga del despliegue.
+Para cumplir con el tercer criterio de aceptación, la prueba se plantearía de la siguiente manera:
 
-El proyecto maneja los ambientes:
+  
 
-```text
-DEV → STAGING → PROD
-```
+- **Tipo de prueba:** Test de Integración / Unitario en `auth-api`.
 
-El paso a producción debe tener aprobación manual.
+- **Escenario:** Simular una falla en el servicio dependiente (`users-api`).
 
-Cada despliegue debe guardar como mínimo:
+- **Ejecución:**
 
-- Versión.
-- Commit.
-- Fecha.
-- Ambiente.
+1. Levantar un servidor HTTP Mock en Go (usando `httptest.Server`) que actúe como `users-api`.
 
----
+2. Configurar el Mock para que devuelva errores HTTP 500 o para que aplique un `time.Sleep` superior al Timeout configurado.
 
-## 7. Trazabilidad
+3. Ejecutar un bucle de N peticiones de login contra el `auth-api`.
 
-Para cada cambio debe ser posible seguir la relación completa:
+4. **Aserciones:**
 
-```text
-HU #72
- ↓
-Rama
- ↓
-Commit
- ↓
-Pull Request
- ↓
-main
- ↓
-Pipeline
- ↓
-Versión
- ↓
-Despliegue
-```
+- Comprobar que las primeras peticiones fallan por Timeout/500.
 
-Ejemplo:
+- Comprobar que, tras cruzar el umbral del Circuit Breaker, las peticiones subsiguientes devuelven un error inmediato (Fail-fast) *sin* que la petición llegue al servidor Mock (validando que el circuito está abierto).
 
-```text
-HU #72
- ↓
-docs/72-gestion-cambios
- ↓
-Commit abc123
- ↓
-PR #85
- ↓
-Release v1.2.0
- ↓
-Producción
-```
-
-De esta forma, si se revisa una versión desplegada, es posible saber qué Historias de Usuario incluye.
-
----
-
-## 8. Release Notes y rollback
-
-Cada versión liberada debe tener un registro sencillo de los cambios incluidos.
-
-Ejemplo:
-
-```text
-Release v1.2.0
-
-Cambios:
-- #72 Gestión de cambios y trazabilidad.
-- #65 Configuración de pruebas.
-- #61 Monitoreo con Prometheus.
-```
-
-También debe mantenerse identificada la versión anterior para poder hacer rollback si aparece un problema.
-
-Ejemplo:
-
-```text
-Versión actual: v1.2.0
-Rollback: v1.1.0
-```
-
----
-
-# Cumplimiento de la HU #72
-
-### Criterio 1
-**El proceso define cómo se solicita, revisa y aprueba un cambio.**
-
-```text
-Issue → PR → Checks → Revisión → Aprobación
-```
-
-### Criterio 2
-**Cada PR referencia la historia de usuario o incidencia.**
-
-Ejemplo:
-
-```text
-Closes #72
-```
-
-### Criterio 3
-**Es posible saber qué HUs incluye cada despliegue.**
-
-Esto se logra relacionando:
-
-```text
-Issue → PR → Commit → Release → Despliegue
-```
-
-Así, cada versión desplegada puede relacionarse con las Historias de Usuario que contiene.
+- (Opcional) Esperar el tiempo de enfriamiento y comprobar que el sistema intenta acceder de nuevo al Mock.

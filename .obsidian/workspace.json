@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS CloudOps/AWS Academy/Module 1/IAM.md",
+                "file": "Universidad/Octavo Semestre/Automatización/Proyecto 1/Temas de Investigación/Untitled 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "IAM"
+              "title": "Untitled 1"
             }
           }
         ]
@@ -235,9 +235,12 @@
   },
   "active": "f66dfeabeb6dc780",
   "lastOpenFiles": [
+    "Universidad/Octavo Semestre/Automatización/Proyecto 1/Temas de Investigación/Untitled.md",
+    "Universidad/Octavo Semestre/Automatización/Proyecto 1/Temas de Investigación/Untitled 1.md",
+    "Universidad/Octavo Semestre/Automatización/Cosas por Investigar Bien.md",
+    "AWS CloudOps/AWS Academy/Module 1/IAM.md",
     "AWS CloudOps/AWS Academy/Module 1/Limites de AWS.md",
     "AWS CloudOps/AWS Academy/Module 1/Alcance de AWS.md",
-    "Universidad/Octavo Semestre/Automatización/Proyecto 1/Temas de Investigación/Untitled.md",
     "Universidad/Octavo Semestre/Ciber/Entregables/Tarea 3 Comprobación de Firma ISO Ubuntu.md",
     "Media/Tarea 3-1788236361485.webp",
     "Media/Tarea 3-1788235854921.webp",
@@ -249,7 +252,6 @@
     "Media/Tarea 3-1788235449689.webp",
     "Media/Tarea 3-1788235389890.webp",
     "Media/Tarea 3-1788234778675.webp",
-    "Universidad/Octavo Semestre/Automatización/Cosas por Investigar Bien.md",
     "Universidad/Octavo Semestre/Ciber/Entregables",
     "Universidad/Octavo Semestre/Automatización/Proyecto 1/Temas de Investigación/Diagrama de Secuencia.md",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 3/Clase.md",
@@ -277,8 +279,6 @@
     "Docker/Docker Images.md",
     "Docker/Ciclo de Vida de un Contenedor.md",
     "Docker/Introducción a los Contenedores.md",
-    "Docker/Comandos.md",
-    "Universidad/Octavo Semestre/Automatización/Temas Estudiados de Clase/Reglas de Git según los Roles.md",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 2",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 1"
   ]
