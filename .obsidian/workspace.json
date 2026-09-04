@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Universidad/Octavo Semestre/Automatización/Proyecto 1/Temas de Investigación/Untitled 1.md",
+                "file": "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 2/Entrega.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled 1"
+              "title": "Entrega"
+            }
+          },
+          {
+            "id": "854b4ec28b5fdd5e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 2/Entrega.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Entrega"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -233,11 +248,18 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "52a162c45abd4a57",
+  "active": "854b4ec28b5fdd5e",
   "lastOpenFiles": [
+    "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 2/Investigación Antes de Clase.md",
+    "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 2/Entrega.md",
+    "Universidad/Octavo Semestre/Computación en la Nube para la IA/Introducción a la Computación en la Nube para la IA.md",
+    "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 1/Investigaciones de Clase.md",
+    "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 1/Entrega.md",
+    "Media/Entrega-1788550723839.webp",
+    "Media/Entrega-1788550664226.webp",
+    "Universidad/Octavo Semestre/Automatización/Proyecto 1/Temas de Investigación/Untitled 1.md",
     "Universidad/Octavo Semestre/Ciber/Entregables/Tarea 3 Comprobación de Firma ISO Ubuntu.md",
     "Universidad/Octavo Semestre/Ciber/Entregables/Reto de Descifrado.md",
-    "Universidad/Octavo Semestre/Automatización/Proyecto 1/Temas de Investigación/Untitled 1.md",
     "Universidad/Octavo Semestre/PDG I/Juan Carlos Muñoz.md",
     "Universidad/Octavo Semestre/Automatización/Proyecto 1/Temas de Investigación/Untitled.md",
     "Universidad/Octavo Semestre/Automatización/Cosas por Investigar Bien.md",
@@ -252,16 +274,11 @@
     "Media/Tarea 3-1788235526473.webp",
     "Media/Tarea 3-1788235451070.webp",
     "Media/Tarea 3-1788235449689.webp",
-    "Media/Tarea 3-1788235389890.webp",
-    "Media/Tarea 3-1788234778675.webp",
     "Universidad/Octavo Semestre/Ciber/Entregables",
     "Universidad/Octavo Semestre/Automatización/Proyecto 1/Temas de Investigación/Diagrama de Secuencia.md",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 3/Clase.md",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 3/Investigación Antes de Clase.md",
-    "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 2/Investigación Antes de Clase.md",
-    "Universidad/Octavo Semestre/Computación en la Nube para la IA/Introducción a la Computación en la Nube para la IA.md",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 3",
-    "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 1/Entrega.md",
     "Universidad/Octavo Semestre/Innovación III/Ideas Principales de Charla Innovación III.md",
     "Universidad/Octavo Semestre/Automatización/Expos/Cloud Design Patterns/Guion_Presentacion_Cloud_Patterns.pdf",
     "Universidad/Octavo Semestre/Automatización/Proyecto 1/Temas de Investigación",
@@ -276,9 +293,6 @@
     "Universidad/Octavo Semestre/PDG I/Investigación/¿Qué es Ray?.md",
     "Universidad/Octavo Semestre/PDG I/Investigación/Ray on Kubernetes.md",
     "Universidad/Octavo Semestre/PDG I/Investigación",
-    "Universidad/Octavo Semestre/Automatización/Temas Estudiados de Clase/Docker Multi Stage.md",
-    "Docker/Dockerfiles.md",
-    "Docker/Docker Images.md",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 2",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 1"
   ]
