@@ -8,35 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "52a162c45abd4a57",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 2/Entrega.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Entrega"
-            }
-          },
-          {
             "id": "854b4ec28b5fdd5e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 2/Entrega.md",
+                "file": "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 4/Clase.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Entrega"
+              "title": "Clase"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -113,7 +98,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "249bd766e6e48f4e",
@@ -250,9 +236,12 @@
   },
   "active": "854b4ec28b5fdd5e",
   "lastOpenFiles": [
-    "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 2/Investigación Antes de Clase.md",
-    "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 2/Entrega.md",
+    "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 3/Clase.md",
+    "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 4/Clase.md",
+    "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 4",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Introducción a la Computación en la Nube para la IA.md",
+    "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 2/Entrega.md",
+    "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 2/Investigación Antes de Clase.md",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 1/Investigaciones de Clase.md",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 1/Entrega.md",
     "Media/Entrega-1788550723839.webp",
@@ -276,7 +265,6 @@
     "Media/Tarea 3-1788235449689.webp",
     "Universidad/Octavo Semestre/Ciber/Entregables",
     "Universidad/Octavo Semestre/Automatización/Proyecto 1/Temas de Investigación/Diagrama de Secuencia.md",
-    "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 3/Clase.md",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 3/Investigación Antes de Clase.md",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 3",
     "Universidad/Octavo Semestre/Innovación III/Ideas Principales de Charla Innovación III.md",
@@ -293,7 +281,6 @@
     "Universidad/Octavo Semestre/PDG I/Investigación/¿Qué es Ray?.md",
     "Universidad/Octavo Semestre/PDG I/Investigación/Ray on Kubernetes.md",
     "Universidad/Octavo Semestre/PDG I/Investigación",
-    "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 2",
-    "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 1"
+    "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 2"
   ]
 }
