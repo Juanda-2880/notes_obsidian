@@ -68,3 +68,26 @@ L7 Traffic Management
 
 Packer con Vagrant
 
+----------
+
+
+
+Forecasting
+
+FinOps
+
+Elasticidad vs Escalibilidad
+
+Configuraciones de Gobernanza
+
+Definir politicas para el nombre de cada servicio que tenga las mejores practicas
+
+RDP
+
+VPN en Azure
+
+SMB y NFS 3.0
+
+Microsoft Defender for CLoud
+
+Azure BluePrint
