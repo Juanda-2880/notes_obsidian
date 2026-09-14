@@ -72,7 +72,6 @@ Packer con Vagrant
 
 
 
-Forecasting
 
 FinOps
 
@@ -84,7 +83,6 @@ Definir politicas para el nombre de cada servicio que tenga las mejores practica
 
 RDP
 
-VPN en Azure
 
 SMB y NFS 3.0
 
