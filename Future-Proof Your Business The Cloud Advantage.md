@@ -14,6 +14,22 @@ It was a Tuesday night in October when the rain started. Marcela was closing up,
 
 The computer was dead. Three years of client files, invoices, and designs — gone in a single night.
 
+That morning, she couldn't send a single invoice or confirm an order. She stood in the doorway, calculator in hand, and cried. The damage: nearly fifteen million pesos and two weeks of lost work.
+
+A friend recommended an IT consultant. He didn't just fix the computer—he moved her business to the cloud. Though afraid it would be complicated, she was more afraid of another night like that one. Within a week, everything lived in secure data centers, accessible from anywhere.
+
+Three months later, her back room had no blinking lights—just a coffee machine. When I asked about her invoices, she tapped her phone, showing me last week's orders, safe and backed up. _“If I had done this three years ago,”_ she said, _“I wouldn't have lost two weeks of orders—or two nights of sleep.”_
+
+Like Marcela, many of you are running your business the hard way—paying for hardware and IT staff, only to watch it become obsolete, while your team is handcuffed to a desk.
+
+This is where Cloud Services change the game. We aren't talking about something abstract in the sky. We're moving your data to secure, global data centers. **It's shifting from owning the power plant to simply plugging into the wall and paying only for what you use.**
+
+Imagine your business three months from now. Lower, predictable IT costs. Happy employees working from anywhere. And you sleep soundly, knowing your life's work is bulletproof. You didn't start your business to manage IT infrastructure.
+
+The transition is seamless—we've helped businesses right here in Cali make this exact move. The question isn't _if_ you will move to the cloud; it's _when_. Don't let outdated technology hold you back. My team is at the back of the room, offering a free, no-obligation IT assessment. Let's future-proof your business together. Thank you.
+
+
+------------
 That morning she could not send a single invoice. She could not confirm a single order. She could not even tell her employees when — or if — they'd get paid that week. She stood in the doorway, calculator in hand, and cried. By the end of it, she estimated the damage at almost fifteen million pesos, and two full weeks of lost orders while she tried to reconstruct client records from memory and old email threads.
 
   
