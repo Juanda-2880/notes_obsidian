@@ -62,7 +62,7 @@ docker push us-central1-docker.pkg.dev/PROJECT_ID/churn-api-repo/churn-api:v1
 
 ```bash
 gcloud run deploy churn-api \
-  --image=us-central1-docker.pkg.dev/PROJECT_ID/churn-api-repo/churn-api:v1 \
+  --image=us-central1-docker.pkg.dev/computacionnube20264-507322/u5-g08-img-20260918/churn-api:v1 \
   --region=us-central1 \
   --no-allow-unauthenticated \
   --min-instances=0 --max-instances=1 \
