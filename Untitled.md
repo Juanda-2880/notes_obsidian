@@ -1,290 +1,106 @@
+### Slide 1: Portada e Introducción – La Tesis de KORA
 
-# SINTRATEL Docket - Complete Kubernetes Architecture Diagram
+_(Tiempo estimado: 0:00 – 0:45 | ~110 palabras)_
 
-This document presents the complete, connected Kubernetes architecture of the **SINTRATEL Docket** platform across all repositories (`docket-iac`, `docket-gitops`, `docket-auth-api`, `docket-users-api`, `docket-todos-api`, `docket-log-message-processor`, `docket-frontend`).
+«Muy buenos días, miembros de la Junta Directiva. Hoy les presentamos los avances y validaciones de **KORA: Pasaporte Cultural**.
 
----
+En la industria musical actual existe una paradoja: tenemos acceso ilimitado a plataformas de streaming, pero conectar con la oferta cultural física y descubrir el talento en vivo de nuestras ciudades sigue siendo un proceso fragmentado y frustrante. KORA nace como un ecosistema _Online-to-Offline_ que convierte la asistencia a eventos en una experiencia gamificada a través de un pasaporte interactivo.
 
-## 1. Full Kubernetes Architecture Diagram (Mermaid)
+Nuestra prioridad en esta etapa ha sido clara: **fracasar rápido, barato y aprender de métricas reales** antes de construir a ciegas. A continuación, les mostraremos cómo validamos primero nuestra propuesta de valor en el mercado digital, el quiebre de hipótesis que redefinió nuestro segmento, cómo iteró el prototipo funcional y la evidencia real que demuestra disposición a pagar.»
 
-```mermaid
-flowchart TD
-    %% =========================================================================
-    %% EXTERNAL TRAFFIC & AWS INGRESS INFRASTRUCTURE
-    %% =========================================================================
-    subgraph WAN ["1. External Traffic & DNS / TLS Layer"]
-        UserBrowser["Clients / Browsers"]
-        R53["AWS Route 53 DNS<br/>dev.praticasaws.dev<br/>staging.praticasaws.dev<br/>praticasaws.dev"]
-        ACM["AWS Certificate Manager (ACM)<br/>Wildcard TLS (*.praticasaws.dev)"]
-        AWS_ALB["AWS Application Load Balancer (ALB)<br/>Internet-Facing Dual-Stack"]
-        
-        UserBrowser -->|"HTTPS :443 / HTTP :80"| R53
-        R53 --> AWS_ALB
-        ACM -.->|"TLS Offloading / Termination"| AWS_ALB
-    end
+### Slide 2: Validación de la Propuesta de Valor en Meta Ads – El Quiebre de Hipótesis
 
-    %% =========================================================================
-    %% KUBERNETES GATEWAY API LAYER
-    %% =========================================================================
-    subgraph GatewayAPI ["2. Kubernetes Gateway API Layer (AWS Load Balancer Controller)"]
-        GC["GatewayClass: aws-alb<br/>(gateway.networking.k8s.io/v1)"]
-        LBCfg["LoadBalancerConfiguration: docket-alb-config<br/>scheme: internet-facing"]
-        
-        GW["Gateway: docket-gateway<br/>Listeners: http (:80), https (:443)"]
-        
-        RRedirect["HTTPRoute: docket-http-redirect<br/>Listener: http (:80)<br/>Rule: / -> 301 Redirect to HTTPS"]
-        
-        RMain["HTTPRoute: docket-httproute<br/>Listener: https (:443)<br/>Host: dev.praticasaws.dev / praticasaws.dev"]
-        
-        TG_FE["TargetGroupConfiguration: frontend-tg-config<br/>targetType: ip, protocol: HTTP"]
-        TG_AUTH["TargetGroupConfiguration: auth-api-tg-config<br/>targetType: ip, protocol: HTTP"]
-        TG_USERS["TargetGroupConfiguration: users-api-tg-config<br/>targetType: ip, protocol: HTTP"]
-        TG_TODOS["TargetGroupConfiguration: todos-api-tg-config<br/>targetType: ip, protocol: HTTP"]
+_(Tiempo estimado: 0:45 – 2:15 | ~210 palabras)_
 
-        AWS_ALB --> GW
-        GC -.-> GW
-        LBCfg -.-> GW
-        GW --> RRedirect
-        GW --> RMain
-        
-        RMain -.-> TG_FE
-        RMain -.-> TG_AUTH
-        RMain -.-> TG_USERS
-        RMain -.-> TG_TODOS
-    end
+«Comenzamos validando la deseabilidad y la tracción de nuestra propuesta de valor antes de invertir tiempo y recursos en desarrollo masivo. Nuestra hipótesis de partida era que nuestro nicho prioritario estaba compuesto exclusivamente por jóvenes universitarios de 18 a 24 años.
 
-    %% =========================================================================
-    %% NAMESPACE: DOCKET WORKLOADS (docket-dev / docket-staging / docket-prod)
-    %% =========================================================================
-    subgraph AppNamespace ["3. Application Namespace (docket-dev / staging / prod)"]
-        
-        %% Kubernetes Services
-        subgraph K8sServices ["ClusterIP Services"]
-            SVC_FE["Service: frontend<br/>ClusterIP :8080"]
-            SVC_AUTH["Service: auth-api<br/>ClusterIP :8081"]
-            SVC_USERS["Service: users-api<br/>ClusterIP :8083"]
-            SVC_TODOS["Service: todos-api<br/>ClusterIP :8082"]
-            SVC_REDIS["Service: redis<br/>ClusterIP :6379"]
-        end
+Para comprobarlo, lanzamos una campaña real en Meta Ads compuesta por un post visual y un video promocional de diez segundos comunicando la experiencia de descubrir eventos locales y coleccionar sellos. Los resultados cuantitativos fueron contundentes: logramos un **alcance de 5.736 personas**, **7.144 reproducciones de video**, una **tasa de captura inicial del 21%** y un **costo por resultado altamente eficiente de entre $100 y $104 pesos colombianos**.
 
-        %% Routing Rules from HTTPRoute
-        RMain -->|"PathPrefix: /"| SVC_FE
-        RMain -->|"PathPrefix: /api/auth"| SVC_AUTH
-        RMain -->|"PathPrefix: /api/users"| SVC_USERS
-        RMain -->|"PathPrefix: /api/todos"| SVC_TODOS
+Sin embargo, este experimento **nos quebró por completo la hipótesis del segmento de mercado**: los jóvenes de 18 a 24 años representaron apenas el 3% de las interacciones. Quienes realmente reaccionaron, retuvieron el video y mostraron un alto interés orgánico fueron las personas entre los **35 y los 64 años**, destacando los hombres de 55 a 64 años con un 35% de los resultados y las mujeres de 35 a 44 años con un 26%. Este aprendizaje nos demostró que la necesidad de encontrar planes culturales centralizados y de calidad está fuertemente latente en un segmento adulto con mayor poder adquisitivo que no habíamos considerado inicialmente.»
 
-        %% Pod Deployments
-        subgraph Deployments ["Workload Deployments & Pods"]
-            
-            subgraph D_FE ["Deployment: frontend"]
-                POD_FE["Pod: frontend<br/>Image: docket/frontend<br/>Runtime: Vue 2 + Nginx<br/>Security: nonroot (UID 101)"]
-            end
+### Slide 3: Reenfoque del Segmento y Diferenciación Competitiva
 
-            subgraph D_AUTH ["Deployment: auth-api"]
-                POD_AUTH["Pod: auth-api<br/>Image: docket/auth-api<br/>Runtime: Go 1.18+ (UID 65532)<br/>Patterns: Circuit Breaker, Retries, Timeouts"]
-            end
+_(Tiempo estimado: 2:15 – 3:30 | ~190 palabras)_
 
-            subgraph D_USERS ["Deployment: users-api"]
-                POD_USERS["Pod: users-api<br/>Image: docket/users-api<br/>Runtime: Java 8 / Spring Boot 1.5.6 (UID 10001)<br/>Patterns: Bulkhead (50 threads), In-Memory DB"]
-            end
+«Este hallazgo no significó descartar la solución, sino enriquecer y afinar nuestra propuesta de valor. Al analizar a la competencia, identificamos que las alternativas existentes son simples canales de notificación de conciertos: le avisan al usuario de una fecha y lo dejan solo, obligándolo a buscar en Google, rastrear ticketeras y lidiar con la dispersión de información. La gente se queja de esa desconexión.
 
-            subgraph D_TODOS ["Deployment: todos-api"]
-                POD_TODOS["Pod: todos-api<br/>Image: docket/todos-api<br/>Runtime: Node.js 24 (UID 65532)<br/>Patterns: Feature Toggles, Memory Cache"]
-            end
+KORA se diferencia al ofrecer una experiencia integral de extremo a extremo que atiende a dos audiencias complementarias: por un lado, para el público adulto descubierto en Meta Ads, resolvemos la fricción de búsqueda centralizando planes y curaduría cultural confiable; por el otro, para el público joven, transformamos el evento en un juego de estatus y comunidad.
 
-            subgraph D_LOGS ["Deployment: log-message-processor"]
-                POD_LOGS["Pod: log-message-processor<br/>Image: docket/log-message-processor<br/>Runtime: Python 3 (UID 10001)<br/>Patterns: Exponential Backoff Retry"]
-            end
+Nuestra ventaja competitiva y difícil de replicar radica en dos pilares: la **geolocalización cultural interactiva** y el **storytelling detrás del artista**. No somos un directorio estático de eventos; somos el puente que conecta la identidad del asistente con el ecosistema musical de su ciudad.»
 
-            subgraph D_REDIS ["Deployment: redis"]
-                POD_REDIS["Pod: redis<br/>Image: redis:7.0-alpine<br/>Datastore & Pub/Sub Message Broker"]
-            end
-        end
+### Slide 4: Madurez del Prototipo – Validación de Deseabilidad con Usuarios
 
-        %% Service to Pod mappings
-        SVC_FE --> POD_FE
-        SVC_AUTH --> POD_AUTH
-        SVC_USERS --> POD_USERS
-        SVC_TODOS --> POD_TODOS
-        SVC_REDIS --> POD_REDIS
+_(Tiempo estimado: 3:30 – 5:00 | ~220 palabras)_
 
-        %% Inter-Service Communication Flow
-        POD_AUTH -->|"Inter-Service Auth Probe<br/>Resilient HTTP (Circuit Breaker)"| SVC_USERS
-        POD_TODOS -->|"Publish Task Events<br/>(CREATE / DELETE)"| SVC_REDIS
-        POD_LOGS -->|"Subscribe channel: log_channel<br/>(Async Consumer)"| SVC_REDIS
+«Habiendo validado el interés general en canales digitales, pasamos a comprobar la usabilidad y deseabilidad de la solución mediante prototipos funcionales e interactivos puestos a prueba directamente con usuarios.
 
-        %% Configuration & Secrets
-        subgraph ConfigAndSecrets ["Config & Secrets Layer"]
-            SEC_JWT["Secret: jwt-secret<br/>Key: JWT_SECRET<br/>(Backed by AWS Secrets Manager & KMS CMK)"]
-        end
+De estas sesiones de prueba presenciales extrajimos tres aprendizajes determinantes:
 
-        SEC_JWT -.->|"Env: JWT_SECRET"| POD_AUTH
-        SEC_JWT -.->|"Env: SPRING_APPLICATION_JSON"| POD_USERS
-        SEC_JWT -.->|"Env: JWT_SECRET"| POD_TODOS
+Primero, sobre el **Pasaporte Cultural y los Sellos Digitales**: observamos que el 85% de los participantes mostró un entusiasmo inmediato, pero con una condición clave: el sello no tiene valor si se queda atrapado dentro de la aplicación; su verdadero valor surge al poder compartirlo en historias de redes sociales como Instagram y al introducir dinámicas de escasez con sellos de edición limitada.
 
-        %% FinOps Downscaler CronJobs
-        subgraph FinOpsSchedule ["FinOps Scheduled Scaling (Policy 2)"]
-            CJ_DOWN["CronJob: finops-off-hours-downscaler<br/>Schedule: 0 0 * * 2-6 (19:00 COT Mon-Fri)<br/>Action: scale deployments --replicas=0"]
-            CJ_UP["CronJob: finops-business-hours-upscaler<br/>Schedule: 0 12 * * 1-5 (07:00 COT Mon-Fri)<br/>Action: scale deployments --replicas=1"]
-            SA_FINOPS["ServiceAccount: finops-downscaler-sa"]
-            ROLE_FINOPS["Role: finops-downscaler-role<br/>verbs: patch, update, scale"]
-            RB_FINOPS["RoleBinding: finops-downscaler-rb"]
+Segundo, sobre el **Storytelling frente al Algoritmo**: los usuarios afirmaron que lo que más valoran de KORA no es solo el mapa, sino conocer el trasfondo y la historia íntima del artista local, algo que plataformas genéricas como Spotify no ofrecen. Por ello, enriquecimos las fichas con notas de voz exclusivas y la historia de origen de cada banda.
 
-            CJ_DOWN -.-> SA_FINOPS
-            CJ_UP -.-> SA_FINOPS
-            SA_FINOPS --- RB_FINOPS
-            RB_FINOPS --- ROLE_FINOPS
-            ROLE_FINOPS ==>|"Automated Scale Down (0) / Up (1)"| Deployments
-        end
-    end
+Y tercero, sobre la **Gamificación**: descubrimos que ubicar un rango final como 'Leyenda KORA' se percibía demasiado lejano, desmotivando a los usuarios en las etapas iniciales. En consecuencia, rediseñamos la curva de experiencia para otorgar victorias rápidas y ascensos durante las primeras dos semanas de uso.»
 
-    %% =========================================================================
-    %% NAMESPACE: GITOPS & ARGO CD (argocd)
-    %% =========================================================================
-    subgraph GitOpsNamespace ["4. GitOps Namespace (argocd)"]
-        APP_ROOT_PROJ["Application: docket-root-projects<br/>Path: projects/"]
-        APP_ROOT_APPS["Application: docket-root-apps<br/>Path: apps/"]
-        
-        PROJ_DEV["AppProject: docket-dev"]
-        PROJ_STAGING["AppProject: docket-staging"]
-        PROJ_PROD["AppProject: docket-prod"]
+### Slide 5: Factibilidad Técnica – Resolviendo la Operación en el Mundo Real
 
-        APP_DOCKET_DEV["Application: docket-dev<br/>Sync: Auto (selfHeal, prune)<br/>Source 1: docket-iac (Helm Chart)<br/>Source 2: docket-gitops (dev values)"]
-        APP_DOCKET_STG["Application: docket-staging<br/>Sync: Auto (selfHeal, prune)"]
-        APP_DOCKET_PROD["Application: docket-prod<br/>Sync: MANUAL (Human Approval Gate)"]
+_(Tiempo estimado: 5:00 – 6:00 | ~180 palabras)_
 
-        APP_ROOT_PROJ --> PROJ_DEV
-        APP_ROOT_PROJ --> PROJ_STAGING
-        APP_ROOT_PROJ --> PROJ_PROD
+«En el componente técnico, sometimos el sistema a condiciones reales de operación para no construir sobre supuestos inviables. Validamos tres frentes críticos:
 
-        APP_ROOT_APPS --> APP_DOCKET_DEV
-        APP_ROOT_APPS --> APP_DOCKET_STG
-        APP_ROOT_APPS --> APP_DOCKET_PROD
+En primer lugar, el **consumo energético**: el muestreo continuo de GPS consumía un 12% de batería por hora en dispositivos Android de gama media. Para evitar la desinstalación de la app, pivotamos hacia un esquema de _geofencing adaptativo_ que solo activa los sensores cuando el acelerómetro detecta desplazamiento del usuario.
 
-        APP_DOCKET_DEV ==>|"Reconciles Desired State"| AppNamespace
-    end
+En segundo lugar, la **carga y actualización de eventos**: comprobamos que extraer datos de redes sociales mediante APIs masivas era inestable y ofrecía apenas un 35% de precisión. Por lo tanto, orientamos la integración hacia alianzas con plataformas locales de boletería, cuya precisión alcanza el 90%, complementado con un portal de autogestión directa para los artistas.
 
-    %% =========================================================================
-    %% NAMESPACE: CHAOS MESH (chaos-mesh)
-    %% =========================================================================
-    subgraph ChaosNamespace ["5. Chaos Engineering Namespace (chaos-mesh)"]
-        CHAOS_MGR["Deployment: chaos-controller-manager<br/>Reconciles CRDs & Webhooks"]
-        CHAOS_DASH["Service: chaos-dashboard<br/>Port: 2333 (ClusterIP)"]
-        CHAOS_DAEMON["DaemonSet: chaos-daemon<br/>Socket: /run/containerd/containerd.sock<br/>Privileged: true (cgroups + netem)"]
+Y en tercer lugar, la **conectividad en eventos en vivo**: en recintos cerrados con alta aglomeración, las redes móviles colapsaban provocando hasta un 40% de fallas en el check-in. Diseñamos entonces una arquitectura _Offline-First_, donde el código QR se valida de manera instantánea y local mediante firma criptográfica, sincronizando los datos en la nube en segundo plano en cuanto se restablece la conexión.»
 
-        EXP_NET["CRD: NetworkChaos<br/>network-delay-users-api<br/>Latency: 3500ms on users-api:8083"]
-        EXP_POD["CRD: PodChaos<br/>pod-kill-redis<br/>Action: pod-kill on redis pods"]
-        EXP_CPU["CRD: StressChaos<br/>stress-cpu-todos<br/>Action: CPU stress on todos-api"]
+### Slide 6: Evidencia de Captura de Valor – Disposición a Pagar Validada
 
-        CHAOS_MGR --> CHAOS_DAEMON
-        EXP_NET -.->|"Injects 3500ms Network Delay"| POD_USERS
-        EXP_POD -.->|"Injects Unannounced Pod Terminations"| POD_REDIS
-        EXP_CPU -.->|"Injects High CPU Load"| POD_TODOS
-    end
+_(Tiempo estimado: 6:00 – 7:30 | ~220 palabras)_
 
-    %% =========================================================================
-    %% NAMESPACE: OPENCOST & OBSERVABILITY (opencost / monitoring)
-    %% =========================================================================
-    subgraph FinOpsObsNamespace ["6. FinOps Cost Observability Namespace (opencost)"]
-        OC_DEPLOY["Deployment: opencost<br/>Image: kubecost-cost-model:v1.107.0"]
-        OC_SVC["Service: opencost<br/>Port: 9003 (ClusterIP)"]
-        PROM["Prometheus Server (External)<br/>prometheus-server.monitoring.svc:9090"]
-        GRAFANA["Grafana FinOps Dashboard<br/>(docket-gitops/dashboards/<br/>finops-cost-and-utilization-dashboard.json)"]
+«Un modelo de negocio solo es viable si existe evidencia concreta de que el mercado está dispuesto a pagar. Para medir esto sin depender de respuestas de complacencia, implementamos pruebas de validación con la técnica de puerta falsa (_Fake Door_) dentro del prototipo:
 
-        OC_DEPLOY --> OC_SVC
-        OC_DEPLOY -->|"Queries CPU/RAM Metrics"| PROM
-        GRAFANA -->|"Scrapes Cost Allocation & Run Rate"| OC_SVC
-    end
+Primero, evaluamos la **monetización B2C mediante un esquema Freemium**: colocamos una opción para adquirir personalizaciones estéticas y beneficios VIP para el pasaporte por un valor de $3.000 pesos colombianos. Nuestro criterio de validación era alcanzar un 15% de interacción, y **obtuvimos un 28% de usuarios que intentaron realizar la transacción de compra de forma espontánea**.
 
-    %% =========================================================================
-    %% UNDERLYING AWS CLUSTER & COMPUTE INFRASTRUCTURE
-    %% =========================================================================
-    subgraph AWS_EKS ["7. EKS Cluster Node Groups & Hardware Isolation"]
-        SPOT_NODES["EKS Managed Node Group: SPOT<br/>Instances: t3.micro, t3a.micro<br/>Capacity: SPOT (~70% savings)"]
-        OD_NODES["EKS Managed Node Group: ON-DEMAND<br/>Instances: t3.micro<br/>Capacity: ON_DEMAND (Critical workloads)"]
+Segundo, testeamos el **micro-mecenazgo voluntario**: incluimos un botón para 'Invitarle una cerveza a la banda' por $4.000 pesos colombianos directamente desde el evento. **Uno de cada tres usuarios intentó presionar el botón de aporte**, preguntando si dicha acción les otorgaba un sello exclusivo de patrocinador o más puntos de experiencia dentro de la comunidad.
 
-        AppNamespace -.->|"Scheduled across"| SPOT_NODES
-        AppNamespace -.->|"Scheduled across"| OD_NODES
-        ChaosNamespace -.->|"DaemonSet deployed on every node"| SPOT_NODES
-        ChaosNamespace -.->|"DaemonSet deployed on every node"| OD_NODES
-    end
-```
+Y en el frente de las **organizaciones y bandas emergentes**, entrevistamos a agrupaciones y gestores culturales: el **100% de los líderes manifestó un interés inmediato en utilizar el check-in de KORA en sus presentaciones**. Su dolor principal es que actualmente no tienen ninguna herramienta para saber quiénes asisten a sus conciertos físicos ni cómo fidelizarlos más allá de una red social.»
 
----
+### Slide 7: Innovación en el Modelo de Negocio – Usuario vs. Cliente Pagador
 
-## 2. Platform Subsystem Breakdown
+_(Tiempo estimado: 7:30 – 8:30 | ~190 palabras)_
 
-### 2.1 Ingress, DNS & Traffic Routing (AWS Gateway API)
-- **AWS Route 53**: Directs traffic for `dev.praticasaws.dev`, `staging.praticasaws.dev`, and `praticasaws.dev`.
-- **AWS Certificate Manager (ACM)**: Managed TLS certificates terminate encrypted HTTPS traffic at the AWS Application Load Balancer.
-- **Kubernetes Gateway API (`gateway.networking.k8s.io/v1`)**:
-  - **`GatewayClass` (`aws-alb`)**: Instructs the AWS Load Balancer Controller to manage target groups and listeners.
-  - **`LoadBalancerConfiguration` (`docket-alb-config`)**: Declares `scheme: internet-facing`.
-  - **`TargetGroupConfiguration`**: Creates dedicated IP-mode Target Groups for `frontend`, `auth-api`, `users-api`, and `todos-api`.
-  - **`Gateway` (`docket-gateway`)**: Listens on port 80 (HTTP) and port 443 (HTTPS).
-  - **`HTTPRoute` (`docket-httproute`)**: Dispatches paths:
-    - `/` $\rightarrow$ `frontend:8080`
-    - `/api/auth` $\rightarrow$ `auth-api:8081`
-    - `/api/users` $\rightarrow$ `users-api:8083`
-    - `/api/todos` $\rightarrow$ `todos-api:8082`
-  - **`HTTPRoute` (`docket-http-redirect`)**: Enforces HTTP 301 redirects to HTTPS on port 80.
+«A partir de estos aprendizajes, definimos con total claridad la diferencia entre quién utiliza la solución y quién paga por ella. KORA opera como una plataforma multilateral de doble cara:
 
----
+El **usuario final** accede de manera gratuita para descubrir eventos, registrar su asistencia física y construir su pasaporte cultural. Su monetización se da por transacciones voluntarias de personalización estética y apoyo directo a artistas.
 
-### 2.2 Application Microservices & Resilience Patterns
-All workloads enforce container security policies (`runAsNonRoot: true`, non-root UIDs):
+Sin embargo, el **cliente que paga sumas significativas por la solución son las organizaciones, los productores de eventos, las salas de música y las marcas aliadas**. ¿Por qué pagan? Porque necesitan con urgencia la data y las métricas de asistencia que hoy nadie les provee. A través de nuestro panel administrativo, les entregamos analítica de audiencia en vivo: datos demográficos consolidados, niveles de recurrencia, horas de mayor afluencia y preferencias musicales.
 
-1. **`frontend`** (Port: `8080`):
-   - Single Page Application built on Vue.js 2, Vuex, Bootstrap-Vue, served via Nginx.
-   - Non-root user `UID 101`.
-2. **`auth-api`** (Port: `8081`):
-   - Go 1.18+ microservice with Distroless container (`UID 65532`).
-   - Implements **Circuit Breaker** (`resilience.go`), **Context Timeout (3.0s)**, and **Retry with Exponential Backoff**.
-   - Authenticates against `users-api:8083` and issues signed JWTs with credentials (`admin`, `johnd`, `janed`, `user`).
-3. **`users-api`** (Port: `8083`):
-   - Java 8 / Spring Boot 1.5.6 microservice with Temurin 8 runtime (`UID 10001`).
-   - Implements **Bulkhead Pattern** (`server.tomcat.max-threads=50`).
-   - In-memory H2 database seeded via `data.sql`.
-4. **`todos-api`** (Port: `8082`):
-   - Node.js 24 runtime (`UID 65532`).
-   - In-memory task store with user isolation.
-   - Implements **Feature Toggles** (`config.js`) for audit logging and maintenance mode.
-   - Publishes `CREATE` and `DELETE` events to Redis channel `log_channel`.
-5. **`log-message-processor`**:
-   - Python 3 worker (`UID 10001`).
-   - Subscribes asynchronously to `log_channel` on Redis with automated exponential backoff reconnection logic.
-   - Candidate for **Scale-to-Zero** when queues are idle.
-6. **`redis`** (Port: `6379`):
-   - `redis:7.0-alpine` serving as the internal message bus and temporary cache.
+Nuestras fuentes de ingreso se estructuran en tres vías: primero, suscripciones al panel de analítica para promotores y salas; segundo, comisiones por integración de boletería aliada y micro-donaciones; y tercero, el modelo freemium de diferenciación digital para los usuarios.»
 
----
+### Slide 8: Roadmap de Crecimiento & Networking Estratégico
 
-### 2.3 FinOps Cost Optimization & Free Tier Governance
-- **Policy 1 (Spot Instances)**: Compute runs on EKS Managed Node Groups with `capacity_type = "SPOT"` (`t3.micro` / `t3a.micro`), yielding ~70% compute cost reduction.
-- **Policy 2 (Scheduled Shutdown)**:
-  - `CronJob/finops-off-hours-downscaler`: Scales non-production environments to 0 replicas Monday–Friday at 19:00 COT (00:00 UTC).
-  - `CronJob/finops-business-hours-upscaler`: Restores replicas to 1 Monday–Friday at 07:00 COT (12:00 UTC).
-  - Saves 64.3% of non-production runtime.
-- **Policy 3 (OpenCost Observability)**:
-  - `opencost` deployment scrapes cluster allocations and models monthly run rates against AWS pricing in `docket-gitops/dashboards/finops-cost-and-utilization-dashboard.json`.
+_(Tiempo estimado: 8:30 – 9:15 | ~140 palabras)_
 
----
+«Para materializar esta oportunidad de forma ordenada, seguimos el principio de aprender a gatear antes de pretender correr:
 
-### 2.4 Chaos Engineering & Resilience (Chaos Mesh)
-- **Deployment**: `chaos-mesh` namespace running `chaos-controller-manager` and `chaos-daemon` (DaemonSet).
-- Direct socket binding: `/run/containerd/containerd.sock` with `privileged: true` for direct Linux kernel namespace injection.
-- **Experiments**:
-  - `NetworkChaos/network-delay-users-api`: Injects 3500ms latency on downstream `users-api` to trip `auth-api` Circuit Breaker into `OPEN` state.
-  - `PodChaos/pod-kill-redis`: Validates that `todos-api` and `log-message-processor` gracefully handle datastore outages.
-  - `StressChaos/stress-cpu-todos`: Evaluates system stability under saturated CPU conditions.
+En la **fase actual de gateo**, nos concentramos en el circuito local e independiente de Cali, validando el loop de check-in y la adopción de sellos con diez eventos presenciales controlados.
 
----
+En la **segunda fase**, formalizaremos el despliegue del dashboard de analítica para organizadores, integraremos pasarelas de pago ágiles como Mercado Pago para habilitar las compras en un clic, y consolidaremos la alianza con ticketeras regionales.
 
-### 2.5 GitOps Continuous Delivery (Argo CD)
-- **App-of-Apps Pattern**:
-  - `docket-root-projects` manages environment `AppProject` definitions (`docket-dev`, `docket-staging`, `docket-prod`).
-  - `docket-root-apps` manages environment `Application` manifests.
-- **Multi-Source Pattern**: Combines the base Helm chart from `docket-iac/helm/docket` with environment values from `docket-gitops/environments/<env>/values.yaml`.
-- **Sync Discipline**:
-  - `dev` and `staging`: Automatic sync (`prune: true`, `selfHeal: true`).
-  - `prod`: Manual sync only, requiring human pull request review and approval.
+En la **fase de expansión**, escalaremos el modelo hacia otras capitales del país. Paralelamente, estamos ejecutando una estrategia activa de networking contactando por LinkedIn a directores de festivales, gestores de salas y líderes de la industria del entretenimiento para co-diseñar el panel administrativo con base en las métricas exactas que ellos requieren para contratar el servicio.»
+
+### Slide 9: Preguntas Estratégicas para la Junta Directiva
+
+_(Tiempo estimado: 9:15 – 10:00 | ~130 palabras)_
+
+«Para concluir nuestra intervención y abrir el espacio de conversación, queremos aprovechar la experiencia estratégica y la visión de negocios de esta mesa directiva planteándoles tres preguntas fundamentales:
+
+1. Tras comprobar en Meta Ads que el público de 35 a 64 años generó la mayor tasa de interacción con un costo sumamente bajo, ¿nos recomiendan reorientar la adquisición principal hacia este segmento con mayor liquidez financiera, o mantener el foco en jóvenes profundizando en la gamificación?
+    
+2. Para el segmento de organizadores y salas de eventos, ¿consideran más conveniente arrancar con un modelo transaccional por asistencia registrada o una suscripción mensual fija por el uso del panel de datos?
+    
+3. ¿Cuál consideran que es la métrica de tracción indispensable que debemos alcanzar en esta etapa piloto para sentarnos a negociar alianzas con las grandes plataformas de boletería?
+    
+
+Muchas gracias por su atención; quedamos atentos a sus preguntas y sugerencias.»
