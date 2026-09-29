@@ -89,3 +89,8 @@ SMB y NFS 3.0
 Microsoft Defender for CLoud
 
 Azure BluePrint
+
+---
+
+POD CON UNA IP ESTABLE
+
