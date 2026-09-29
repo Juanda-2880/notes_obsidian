@@ -13,4 +13,6 @@ Mi idea principal sería realizar una especie de Infraestructura Hibrida con GCP
 
 Para el tema de que se encuentren estables es hacer replicas de los servicios en la Nube Aliada, es decir, de que se tengan las cosas de Computo con GCP y la replica en caso de Falla sea en Computo de Azure. Siguiendo esta misma idea en viceversa con Azure y GCP
 
-Esto nos asegura una buena disponibilidad en caso de falla de una nube y priorizar de que el servicio este siempre operativo 
+Esto nos asegura una buena disponibilidad en caso de falla de una nube y priorizar de que el servicio este siempre operativo.
+
+
