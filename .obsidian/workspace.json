@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Universidad/Octavo Semestre/Automatización/Cosas por Investigar Bien.md",
+                "file": "Universidad/Octavo Semestre/Automatización/Proyecto 2/Retos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cosas por Investigar Bien"
+              "title": "Retos"
+            }
+          },
+          {
+            "id": "41e6e24a9c5499ae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Universidad/Octavo Semestre/Automatización/Proyecto 2/Investigación Preliminar.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Investigación Preliminar"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -98,7 +113,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "249bd766e6e48f4e",
@@ -233,11 +249,16 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "7e9f52c6b1fdbed3",
+  "active": "41e6e24a9c5499ae",
   "lastOpenFiles": [
+    "Universidad/Octavo Semestre/Automatización/Proyecto 2/Retos.md",
+    "Universidad/Octavo Semestre/Automatización/Proyecto 2/Investigación Preliminar.md",
+    "Media/Investigación Preliminar-1790697211989.webp",
+    "Universidad/Octavo Semestre/Automatización/Cosas por Investigar Bien.md",
+    "Universidad/Octavo Semestre/Automatización/Proyecto 2",
+    "Calificaciones Sistemas Operativos.md",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 6/Informe Técnico Diagnóstico del Pipeline de Retención.md",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 6/Entrega Proyecto Final.md",
-    "Calificaciones Sistemas Operativos.md",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 5/Informe de Entrega Unidad 5 De Modelo Entrenado a Servicio en Producción.md",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 4/Clase.md",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 3/Investigación Antes de Clase.md",
@@ -254,7 +275,6 @@
     "Media/Entrega Proyecto Final-1790279747278.webp",
     "Media/Entrega Proyecto Final-1790279296722.webp",
     "Media/Entrega Proyecto Final-1790279065811.webp",
-    "Media/Entrega Proyecto Final-1790278915918.webp",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Untitled.md",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 6",
     "Universidad/Octavo Semestre/Untitled",
@@ -265,21 +285,17 @@
     "Universidad/Octavo Semestre/PDG I/Desglose de Tareas y Requerimientos  IAsLab ORCHID.md",
     "Universidad/Octavo Semestre/Automatización/Temas Estudiados de Clase/Google Lighthouse.md",
     "Universidad/Octavo Semestre/Automatización/Temas Estudiados de Clase/VPN en Azure.md",
-    "Universidad/Octavo Semestre/Automatización/Cosas por Investigar Bien.md",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 5",
     "README.md",
     "Untitled 1.md",
     "Future-Proof Your Business The Cloud Advantage.md",
     "Universidad/Octavo Semestre/Automatización/Temas Estudiados de Clase/Forecasting.md",
     "Universidad/Octavo Semestre/Ciber/Entregables/Informe Transferencia Segura de Archivos con WinSCP y Autenticación de Doble Factor con Google Authenticator.md",
-    "Informe Transferencia Segura de Archivos con WinSCP y Autenticación de Doble Factor con Google Authenticator.md",
-    "The Invisible Threads How Telematics Keeps Our World Spinning.md",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 3/Entregable",
     "Universidad/Octavo Semestre/Ciber/Semana 6",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 4",
     "Universidad/Octavo Semestre/Ciber/Entregables",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 3",
-    "Universidad/Octavo Semestre/Automatización/Expos/Cloud Design Patterns/Guion_Presentacion_Cloud_Patterns.pdf",
-    "Universidad/Octavo Semestre/Automatización/Proyecto 1/Temas de Investigación"
+    "Universidad/Octavo Semestre/Automatización/Expos/Cloud Design Patterns/Guion_Presentacion_Cloud_Patterns.pdf"
   ]
 }
