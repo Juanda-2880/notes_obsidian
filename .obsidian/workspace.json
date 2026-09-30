@@ -35,7 +35,8 @@
               "title": "Investigación Preliminar"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -248,10 +249,10 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "7e9f52c6b1fdbed3",
+  "active": "41e6e24a9c5499ae",
   "lastOpenFiles": [
-    "Universidad/Octavo Semestre/Automatización/Proyecto 2/Investigación Preliminar.md",
     "Universidad/Octavo Semestre/Automatización/Proyecto 2/Retos.md",
+    "Universidad/Octavo Semestre/Automatización/Proyecto 2/Investigación Preliminar.md",
     "Media/Investigación Preliminar-1790697211989.webp",
     "Universidad/Octavo Semestre/Automatización/Cosas por Investigar Bien.md",
     "Universidad/Octavo Semestre/Automatización/Proyecto 2",

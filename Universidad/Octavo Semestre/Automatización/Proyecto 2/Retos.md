@@ -15,4 +15,12 @@ Para el tema de que se encuentren estables es hacer replicas de los servicios en
 
 Esto nos asegura una buena disponibilidad en caso de falla de una nube y priorizar de que el servicio este siempre operativo.
 
+---
+
+
+### Gobierno de la Plataforma
+
+**Solución Barata**
+
+
 
