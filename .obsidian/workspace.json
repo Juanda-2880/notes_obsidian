@@ -127,7 +127,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "249bd766e6e48f4e",
@@ -265,10 +266,10 @@
   "active": "da7cc74d547f1def",
   "lastOpenFiles": [
     "Universidad/Octavo Semestre/Automatización/Proyecto 2/Investigación Preliminar.md",
+    "Universidad/Octavo Semestre/Automatización/Proyecto 2/Consolidate the case baseline technical inventory, current network, figures and criteria.md",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 2/Investigación Antes de Clase.md",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 1/Investigaciones de Clase.md",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 1/Entrega.md",
-    "Universidad/Octavo Semestre/Automatización/Proyecto 2/Consolidate the case baseline technical inventory, current network, figures and criteria.md",
     "Universidad/Octavo Semestre/Automatización/Proyecto 2/Retos.md",
     "Media/Investigación Preliminar-1790697211989.webp",
     "Universidad/Octavo Semestre/Automatización/Cosas por Investigar Bien.md",
