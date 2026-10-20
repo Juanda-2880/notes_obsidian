@@ -33,7 +33,7 @@
       {
         "id": "3ff9239391f7d706",
         "type": "tabs",
-        "dimension": 72.71157167530224,
+        "dimension": 74.13494809688581,
         "children": [
           {
             "id": "59eb404e14fc65b2",
@@ -47,7 +47,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorador de archivos"
             }
           },
           {
@@ -80,9 +80,9 @@
         ]
       },
       {
-        "id": "aabb88e2419fe625",
+        "id": "6f96290e6bd6c4e4",
         "type": "tabs",
-        "dimension": 27.288428324697758,
+        "dimension": 25.86505190311419,
         "children": [
           {
             "id": "ca7216684bf528bd",
@@ -91,7 +91,7 @@
               "type": "graph",
               "state": {},
               "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "Vista gráfica"
             }
           }
         ]
@@ -221,21 +221,21 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false,
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Crear nueva base": false,
       "obsidian-git:Open Git source control": false,
-      "obsidian-excalidraw-plugin:New drawing": false
+      "obsidian-excalidraw-plugin:Nuevo Bosquejo": false
     }
   },
-  "active": "da7cc74d547f1def",
+  "active": "59eb404e14fc65b2",
   "lastOpenFiles": [
-    "Universidad/Octavo Semestre/Ciber/Entregables/Informe Transferencia Segura de Archivos con WinSCP y Autenticación de Doble Factor con Google Authenticator.md",
     "Universidad/Octavo Semestre/Ciber/Entregables/Informe de Laboratorio No 3  Hacking Ético.md",
+    "Universidad/Octavo Semestre/Ciber/Entregables/Informe Transferencia Segura de Archivos con WinSCP y Autenticación de Doble Factor con Google Authenticator.md",
     "Universidad/Octavo Semestre/Ciber/Entregables/Reto de Descifrado.md",
     "Universidad/Octavo Semestre/Ciber/Entregables/Sitio Web Seguro.md",
     "Media/Hacking Etico-1791351885088.webp",
