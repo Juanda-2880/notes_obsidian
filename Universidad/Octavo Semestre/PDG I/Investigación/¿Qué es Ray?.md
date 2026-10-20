@@ -1,6 +1,6 @@
 #Ray #PDG #Contexto 
 
-**¿Qué es Ray?** 
+**Qué es Ray** 
 
 Ray es una herramienta _open-source_ (de código abierto) diseñada para el escalamiento de aplicaciones de Inteligencia Artificial (IA) y Python, con un fuerte enfoque en _Machine Learning_ (ML) y _Deep Learning_. Proporciona la capa de cálculo necesaria para el procesamiento en paralelo, permitiendo a los desarrolladores escalar cargas de trabajo sin necesidad de ser expertos en sistemas distribuidos.
 
