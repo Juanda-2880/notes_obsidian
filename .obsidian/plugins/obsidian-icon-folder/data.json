@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiCloud",
       "⛅",
       "LiCloudCog",
       "💤",
-      "🏄‍♂️",
-      "LiContainer"
+      "🏄‍♂️"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -35,7 +35,7 @@
     "useInternalPlugins": false
   },
   "Media": "LiCamera",
-  "AWS CloudOps": "☁",
+  "AWS CloudOps": "LiCloud",
   "AWS CloudOps/AWS Academy": "LiSchool",
   "Universidad": "LiSchool",
   "Universidad/Octavo Semestre": "🎱",
