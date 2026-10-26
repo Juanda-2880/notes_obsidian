@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "95a6b98df6c1bbb4",
+        "id": "cf8180bb4c63048a",
         "type": "tabs",
         "children": [
           {
-            "id": "5eee07056149e8ff",
+            "id": "47a414000ac67139",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Harness/Lección 01.md",
+                "file": "Universidad/Octavo Semestre/Plataformas II/Network Policies/Crear Network Policies con Calico.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lección 01"
+              "title": "Crear Network Policies con Calico"
             }
           }
         ]
@@ -33,7 +33,7 @@
       {
         "id": "3ff9239391f7d706",
         "type": "tabs",
-        "dimension": 82.69896193771626,
+        "dimension": 77.33564013840831,
         "children": [
           {
             "id": "59eb404e14fc65b2",
@@ -82,7 +82,7 @@
       {
         "id": "7b1d8a2fffd5aebe",
         "type": "tabs",
-        "dimension": 17.301038062283737,
+        "dimension": 22.664359861591695,
         "children": [
           {
             "id": "c0cc6e7f9c6fde73",
@@ -217,8 +217,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 324.5,
-    "collapsed": true
+    "width": 324.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -233,9 +232,14 @@
       "obsidian-excalidraw-plugin:Nuevo Bosquejo": false
     }
   },
-  "active": "5eee07056149e8ff",
+  "active": "47a414000ac67139",
   "lastOpenFiles": [
+    "Universidad/Octavo Semestre/Plataformas II/Network Policies",
+    "Universidad/Octavo Semestre/Plataformas II/Network Policies/Netowork Policies.md",
+    "Universidad/Octavo Semestre/Plataformas II/Network Policies/Crear Network Policies con Calico.md",
     "Harness/Lección 01.md",
+    "Universidad/Octavo Semestre/Plataformas II",
+    "Universidad/Octavo Semestre/Sin título.md",
     "Harness",
     "Informe de Avance de Proyecto Kora  Pasaporte Cultural.md",
     "Sin título.md",
@@ -271,16 +275,11 @@
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 1/Investigaciones de Clase.md",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 1/Entrega.md",
     "Universidad/Octavo Semestre/Automatización/Proyecto 2/Retos.md",
-    "Universidad/Octavo Semestre/Automatización/Cosas por Investigar Bien.md",
     "Universidad/Octavo Semestre/Automatización/Proyecto 2",
-    "Calificaciones Sistemas Operativos.md",
-    "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 6/Informe Técnico Diagnóstico del Pipeline de Retención.md",
-    "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 6/Entrega Proyecto Final.md",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 6",
     "Universidad/Octavo Semestre/Untitled",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 5",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 3/Entregable",
-    "Universidad/Octavo Semestre/Ciber/Semana 6",
-    "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 4"
+    "Universidad/Octavo Semestre/Ciber/Semana 6"
   ]
 }
