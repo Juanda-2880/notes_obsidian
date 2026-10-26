@@ -46,4 +46,7 @@ Completion criteria:
 
 Crea un archivo Agents.md ponlo en la raiz del repositorio para decirle al agente el stack tecnico, las convenciones arquitectonicas y los comandos de verificacion. Es el primer paso del Harness Engineering y uno de los de mayor retorno. Un solo AGENTS.md puede ser mas efectivo que actualizara un modelo mas caro 
 
-Contruye un bucle diagnostico. 
+Contruye un bucle diagnostico. No trates los dallos como "el modelo volvió a equivocarse". Tratalos como señales de que tu harness tiene un Defecto. En cada fallo, identifaca la capa, corriglea y evita repetir ese mode de fallo. Tras unas rondas, tu harness se fortalece y el rendimiento del agente se estabiliza. Es como reparar Carreteras: Cada bache que tapas hace más suave el siguiente tramo
+
+Cuantifica las Mejoras. Mantén un registro sencillo: Si cada tarea tuvo éxito o falló, y qué capa causó el fallo. Después de unas rondas verás cuál capa es el cuello de Botella.
+
