@@ -11,10 +11,14 @@
             "id": "5eee07056149e8ff",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Harness/Lección 01.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nueva pestaña"
+              "title": "Lección 01"
             }
           }
         ]
@@ -213,7 +217,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 324.5
+    "width": 324.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -228,10 +233,12 @@
       "obsidian-excalidraw-plugin:Nuevo Bosquejo": false
     }
   },
-  "active": "59eb404e14fc65b2",
+  "active": "5eee07056149e8ff",
   "lastOpenFiles": [
-    "Sin título.md",
+    "Harness/Lección 01.md",
+    "Harness",
     "Informe de Avance de Proyecto Kora  Pasaporte Cultural.md",
+    "Sin título.md",
     "Excalidraw/Drawing 2026-10-22 12.02.32.excalidraw.md",
     "Sin título.canvas",
     "AWS CloudOps/AWS Academy/Module 1/Alcance de AWS.md",
@@ -269,13 +276,11 @@
     "Calificaciones Sistemas Operativos.md",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 6/Informe Técnico Diagnóstico del Pipeline de Retención.md",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 6/Entrega Proyecto Final.md",
-    "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 5/Informe de Entrega Unidad 5 De Modelo Entrenado a Servicio en Producción.md",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 6",
     "Universidad/Octavo Semestre/Untitled",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 5",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 3/Entregable",
     "Universidad/Octavo Semestre/Ciber/Semana 6",
-    "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 4",
-    "Universidad/Octavo Semestre/Ciber/Entregables"
+    "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 4"
   ]
 }
