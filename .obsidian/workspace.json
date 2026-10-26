@@ -49,7 +49,8 @@
               "title": "Entendiendo Network Policies"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -245,7 +246,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 324.5
+    "width": 324.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -260,12 +262,12 @@
       "obsidian-excalidraw-plugin:Nuevo Bosquejo": false
     }
   },
-  "active": "47a414000ac67139",
+  "active": "821afd2c02f079a3",
   "lastOpenFiles": [
-    "Media/CodigoEtica-IEEE.pdf",
-    "Universidad/Octavo Semestre/Plataformas II/Network Policies/Entendiendo Network Policies.md",
     "Universidad/Octavo Semestre/Ciber/Semana 13/Ética Profesional.md",
     "Universidad/Octavo Semestre/Plataformas II/Network Policies/Crear Network Policies con Calico.md",
+    "Media/CodigoEtica-IEEE.pdf",
+    "Universidad/Octavo Semestre/Plataformas II/Network Policies/Entendiendo Network Policies.md",
     "Universidad/Octavo Semestre/Ciber/Sin título.md",
     "Universidad/Octavo Semestre/Ciber/Semana 13",
     "Media/Crear Network Policies con Calico-1793041418639.webp",
@@ -307,7 +309,6 @@
     "Universidad/Octavo Semestre/Automatización/Proyecto 2/Consolidate the case baseline technical inventory, current network, figures and criteria.md",
     "Universidad/Octavo Semestre/Automatización/Proyecto 2",
     "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 6",
-    "Universidad/Octavo Semestre/Untitled",
-    "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 5"
+    "Universidad/Octavo Semestre/Untitled"
   ]
 }
