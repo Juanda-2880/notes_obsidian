@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Harness/Lección 01.md",
+                "file": "Universidad/Octavo Semestre/Automatización/Cosas por Investigar Bien.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lección 01"
+              "title": "Cosas por Investigar Bien"
             }
           }
         ]
@@ -235,8 +235,9 @@
   },
   "active": "a1a80c51cdc0e4b0",
   "lastOpenFiles": [
-    "Universidad/Octavo Semestre/Plataformas II/Network Policies/Entendiendo Network Policies.md",
     "Universidad/Octavo Semestre/Plataformas II/Network Policies/Crear Network Policies con Calico.md",
+    "Harness/Lección 01.md",
+    "Universidad/Octavo Semestre/Plataformas II/Network Policies/Entendiendo Network Policies.md",
     "Universidad/Octavo Semestre/Ciber/Semana 13/Ética Profesional.md",
     "Media/CodigoEtica-IEEE.pdf",
     "Universidad/Octavo Semestre/Ciber/Sin título.md",
@@ -253,7 +254,6 @@
     "Media/Crear Network Policies con Calico-1793039332755.webp",
     "Universidad/Octavo Semestre/Plataformas II/Network Policies/Netowork Policies.md",
     "Universidad/Octavo Semestre/Plataformas II/Network Policies",
-    "Harness/Lección 01.md",
     "Universidad/Octavo Semestre/Plataformas II",
     "Universidad/Octavo Semestre/Sin título.md",
     "Harness",

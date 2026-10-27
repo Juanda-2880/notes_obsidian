@@ -94,3 +94,96 @@ Azure BluePrint
 
 POD CON UNA IP ESTABLE
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tres lenguajes de Programacion cual consume mas en Kubernetes
+
+Estrategias de Despliegue con Kubernetes y agregar Obs (Metricas, Logs, Traces, Eventos, Alertas) Implementar ELK, Kubecost, Implementar Login, un sistema de Autenticacion (No normal, con SSO o asi todo pro)
+
+- Blue Green
+- Canary
+- Rolling Deployment
+- Recreate
+- Shadow Deployment
+- Feature flags
+
+
+Exponer
+- Aplicacion en vivo
+- -5 mins
+
+Chequear Terraform con Kubernetes
+Instalar Lens
+
+Metricas
+- Recursos
+- Estado
+- Rendimiento
+- Metricas de Negocio (Impacto a los usuarios)
+
+Importancia de Metricas en Kubernetes
+Las metricas deben cumplir con:
+- Especificas
+- Accionables
+- Relevantes
+- Oportunas
+- Medibles
+
+Piramide de Monitoreo
+- Recursos fisicos y virtuales
+- Metricas de Kubernetes y sus componentes
+- Metricas de los servicios y aplicaciones que se ejecutan en el cluster
+- Negocio
+
+Dos modelos:
+- RED
+- USE
+
+Kubernetes recopilacion de metricas 
+- Daemon Sets
+- Sidecards
+
+- Prometheus
+- Visualizacion: Grafana, Hibana, DataDog
+- Alertas
+- Pipelines de Datos de las metricas
+- Conocer el estado
+
+Metricas de Infra, Metricas de Cluster, Metricas de Pods, Metricas de Red, Metricas de Aplicacion
+
+
+Cuales son las metricas de Infra?
+
+Metricas de Red
+
+Metricas de Cluster, cosas del ETCD, API SERVER ETC ETC
+
+Capacidad total del cluster vs la usada 
+
+Metricas de los Pods, los estados 
+
+Uso de CPU por nodo etc etc
+
+Health Checks
+
+Metricas para el HPA
+
+Metricas para el Almacenamiento el PVC etc etc
+
+Monitoreo Centralizado y Distribuido 
+
+ELK
+
