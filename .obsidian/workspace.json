@@ -35,7 +35,8 @@
               "title": "Expo Final"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -247,10 +248,10 @@
       "obsidian-excalidraw-plugin:Nuevo Bosquejo": false
     }
   },
-  "active": "55cd4b3c8d3ecb7a",
+  "active": "62c484a251cbb9b6",
   "lastOpenFiles": [
-    "Universidad/Octavo Semestre/Automatización/Proyecto 2/Expo Final.md",
     "Universidad/Octavo Semestre/PDG I/Adelantos (Cosa que he realizado).md",
+    "Universidad/Octavo Semestre/Automatización/Proyecto 2/Expo Final.md",
     "Universidad/Octavo Semestre/Automatización/Proyecto 2/Consolidate the case baseline technical inventory, current network, figures and criteria.md",
     "Universidad/Octavo Semestre/Automatización/Proyecto 2/Blockchain.md",
     "Universidad/Octavo Semestre/Automatización/Proyecto 2/Retos.md",
