@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "🍃",
+      "LiFileChartColumnIncreasing",
       "🪐",
       "LiHardHat",
-      "LiCloud",
-      "⛅",
-      "LiCloudCog"
+      "LiCloud"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -47,5 +47,6 @@
   "Universidad/Octavo Semestre/Innovación III": "💤",
   "Universidad/Octavo Semestre/Computación en la Nube para la IA": "⛅",
   "Harness": "LiHardHat",
-  "Universidad/Octavo Semestre/Plataformas II": "🪐"
+  "Universidad/Octavo Semestre/Plataformas II": "🪐",
+  "Universidad/Octavo Semestre/Machine Learning III": "🍃"
 }

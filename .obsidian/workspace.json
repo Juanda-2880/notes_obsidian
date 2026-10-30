@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "2af9b6a34869d9dc",
+        "id": "f3c8b9b59e0e49c7",
         "type": "tabs",
         "children": [
           {
-            "id": "a51f1d09a014a163",
+            "id": "2b7100ac24d2d5a2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Universidad/Octavo Semestre/Automatización/Proyecto 3/Primer Análisis.md",
+                "file": "Universidad/Octavo Semestre/Machine Learning III/Primera Sesión/Lectura Previa.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Primer Análisis"
+              "title": "Lectura Previa"
             }
           }
         ]
@@ -233,13 +233,19 @@
       "obsidian-excalidraw-plugin:Nuevo Bosquejo": false
     }
   },
-  "active": "a51f1d09a014a163",
+  "active": "2b7100ac24d2d5a2",
   "lastOpenFiles": [
+    "Media/Lectura Previa-1793374971120.webp",
+    "Media/Lectura Previa-1793374061782.webp",
+    "Universidad/Octavo Semestre/Machine Learning III/Primera Sesión/Apuntes en Clase.md",
+    "Universidad/Octavo Semestre/Machine Learning III/Primera Sesión/Lectura Previa.md",
+    "Universidad/Octavo Semestre/Machine Learning III/Primera Sesión",
+    "Universidad/Octavo Semestre/Machine Learning III",
+    "Universidad/Octavo Semestre/Automatización/Proyecto 3/Primer Análisis.md",
     "Media/Primer Análisis-1793330434901.webp",
     "Media/Primer Análisis-1793330383172.webp",
     "Media/Primer Análisis-1793330180860.webp",
     "Sin título.md",
-    "Universidad/Octavo Semestre/Automatización/Proyecto 3/Primer Análisis.md",
     "Universidad/Octavo Semestre/Automatización/Proyecto 3",
     "Universidad/Octavo Semestre/PDG I/Adelantos (Cosa que he realizado).md",
     "Universidad/Octavo Semestre/Automatización/Temas Estudiados de Clase/Manifesto Ágil.md",
@@ -267,20 +273,14 @@
     "Media/Crear Network Policies con Calico-1793040207746.webp",
     "Media/Crear Network Policies con Calico-1793040097112.webp",
     "Media/Crear Network Policies con Calico-1793039910565.webp",
-    "Media/Crear Network Policies con Calico-1793039585226.webp",
-    "Media/Crear Network Policies con Calico-1793039469759.webp",
     "Universidad/Octavo Semestre/Plataformas II/Network Policies/Netowork Policies.md",
     "Universidad/Octavo Semestre/Plataformas II/Network Policies",
     "Universidad/Octavo Semestre/Plataformas II",
     "Universidad/Octavo Semestre/Sin título.md",
     "Harness",
     "Informe de Avance de Proyecto Kora  Pasaporte Cultural.md",
-    "Excalidraw/Drawing 2026-10-22 12.02.32.excalidraw.md",
     "Sin título.canvas",
-    "AWS CloudOps/AWS Academy/Module 1/Alcance de AWS.md",
     "Excalidraw",
-    "Universidad/Octavo Semestre/Ciber/Semana 9",
-    "Universidad/Octavo Semestre/Automatización/Proyecto 2",
-    "Universidad/Octavo Semestre/Computación en la Nube para la IA/Unidad 6"
+    "Universidad/Octavo Semestre/Ciber/Semana 9"
   ]
 }
