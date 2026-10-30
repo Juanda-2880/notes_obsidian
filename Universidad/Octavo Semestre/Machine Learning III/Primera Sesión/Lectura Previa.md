@@ -53,3 +53,11 @@ Cada uno de estos responden diferentes preguntas de negocio y no necesariamente 
 
 ### Series de Tiempo y sus Componentes
 
+Las series de tiempo son observaciones de una misma variable para diferentes períodos, y generalmente el espacio entre cada observación es siempre el mismo. 
+
+![[Lectura Previa-1793392580503.webp]]
+
+En general Yt se trata como una variable aleatoria. Las series de tiempo es empleado tanto para referirnos a un conjunto de realizaciones de la variable aleatoria, también se tiene el proceso de DGP
+
+![[Lectura Previa-1793392846530.webp]]
+Donde i.i.d representa una variable aleatoria que sigue una distribución idéntica e independiente. En otras palabras Yt es una variable aleatoria con media cero y varianza 
