@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c5f92d278b1b42aa",
+        "id": "e04ac28f879d656a",
         "type": "tabs",
         "children": [
           {
-            "id": "bd2700204c8b50a8",
+            "id": "e7dd0f2c38f1cdd7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Universidad/Octavo Semestre/Ciber/Semana 13/Ética Profesional.md",
+                "file": "Universidad/Octavo Semestre/Ciber/Semana 14/Preparación de Clase.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ética Profesional"
+              "title": "Preparación de Clase"
             }
           }
         ]
@@ -233,8 +233,12 @@
       "obsidian-excalidraw-plugin:Nuevo Bosquejo": false
     }
   },
-  "active": "bd2700204c8b50a8",
+  "active": "e7dd0f2c38f1cdd7",
   "lastOpenFiles": [
+    "Media/Preparación de Clase-1793805495434.webp",
+    "Universidad/Octavo Semestre/Ciber/Semana 14/Preparación de Clase.md",
+    "Universidad/Octavo Semestre/Ciber/Semana 14",
+    "Universidad/Octavo Semestre/Ciber/Semana 13/Ética Profesional.md",
     "Universidad/Octavo Semestre/Ciber/Proyecto Ciber/Informe.md",
     "Media/Informe-1793552385893.webp",
     "Universidad/Octavo Semestre/Ciber/Proyecto Ciber",
@@ -267,7 +271,6 @@
     "Universidad/Octavo Semestre/Ciber/Entregables/Reto de Descifrado.md",
     "Universidad/Octavo Semestre/Ciber/Entregables/Informe Transferencia Segura de Archivos con WinSCP y Autenticación de Doble Factor con Google Authenticator.md",
     "Universidad/Octavo Semestre/Ciber/Entregables/Informe de Laboratorio No 3  Hacking Ético.md",
-    "Universidad/Octavo Semestre/Ciber/Semana 13/Ética Profesional.md",
     "Universidad/Octavo Semestre/Automatización/Cosas por Investigar Bien.md",
     "Universidad/Octavo Semestre/Plataformas II/Network Policies/Crear Network Policies con Calico.md",
     "Harness/Lección 01.md",
@@ -275,11 +278,9 @@
     "Media/CodigoEtica-IEEE.pdf",
     "Universidad/Octavo Semestre/Ciber/Sin título.md",
     "Universidad/Octavo Semestre/Ciber/Semana 13",
-    "Universidad/Octavo Semestre/Plataformas II/Network Policies/Netowork Policies.md",
     "Universidad/Octavo Semestre/Plataformas II/Network Policies",
     "Universidad/Octavo Semestre/Plataformas II",
     "Harness",
-    "Sin título.canvas",
-    "Excalidraw"
+    "Sin título.canvas"
   ]
 }
