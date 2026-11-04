@@ -4,11 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "e04ac28f879d656a",
+        "id": "a4f6d6364c4358e7",
         "type": "tabs",
         "children": [
           {
-            "id": "e7dd0f2c38f1cdd7",
+            "id": "5a7a8090f34ab687",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Universidad/Octavo Semestre/Ciber/Semana 14/Apuntes de Clase.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Apuntes de Clase"
+            }
+          },
+          {
+            "id": "74d1d8070300288d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -21,7 +35,8 @@
               "title": "Preparación de Clase"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -233,10 +248,11 @@
       "obsidian-excalidraw-plugin:Nuevo Bosquejo": false
     }
   },
-  "active": "e7dd0f2c38f1cdd7",
+  "active": "74d1d8070300288d",
   "lastOpenFiles": [
-    "Media/Preparación de Clase-1793805495434.webp",
+    "Universidad/Octavo Semestre/Ciber/Semana 14/Apuntes de Clase.md",
     "Universidad/Octavo Semestre/Ciber/Semana 14/Preparación de Clase.md",
+    "Media/Preparación de Clase-1793805495434.webp",
     "Universidad/Octavo Semestre/Ciber/Semana 14",
     "Universidad/Octavo Semestre/Ciber/Semana 13/Ética Profesional.md",
     "Universidad/Octavo Semestre/Ciber/Proyecto Ciber/Informe.md",
@@ -256,7 +272,6 @@
     "Universidad/Octavo Semestre/Automatización/Proyecto 3/Primer Análisis.md",
     "Media/Primer Análisis-1793330434901.webp",
     "Media/Primer Análisis-1793330383172.webp",
-    "Media/Primer Análisis-1793330180860.webp",
     "Sin título.md",
     "Universidad/Octavo Semestre/Automatización/Proyecto 3",
     "Universidad/Octavo Semestre/PDG I/Adelantos (Cosa que he realizado).md",
