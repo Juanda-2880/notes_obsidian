@@ -111,7 +111,7 @@ POD CON UNA IP ESTABLE
 
 Tres lenguajes de Programacion cual consume mas en Kubernetes
 
-Estrategias de Despliegue con Kubernetes y agregar Obs (Metricas, Logs, Traces, Eventos, Alertas) Implementar ELK, Kubecost, Implementar Login, un sistema de Autenticacion (No normal, con SSO o asi todo pro)
+Estrategias de Despliegue con Kubernetes y agregar Obs (Metricas, Logs, Traces, Eventos, Alertas) Implementar ELK, Kubecost, Implementar Login, un sistema de Autenticacion (No normal, con SSO o asi todo pro para el Dashboard)
 
 - Blue Green
 - Canary
@@ -123,7 +123,8 @@ Estrategias de Despliegue con Kubernetes y agregar Obs (Metricas, Logs, Traces, 
 
 Exponer
 - Aplicacion en vivo
-- -5 mins
+- Documentacion
+- Deployment esocigo y asi 
 
 Chequear Terraform con Kubernetes
 Instalar Lens
